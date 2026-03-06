@@ -909,10 +909,9 @@
                     <p>Descubre todos los detalles de nuestros cursos de crecimiento personal diseñados para transformar tu vida.</p>
                 </div>
                 <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                    <button onclick="enrollNow()" class="flex-1 bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50">
+                    <button id="btnInscribirse" onclick="enrollNow('courseContent')" class="flex-1 bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50">
                         Inscribirse Ahora
                     </button>
-                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
                     <button onclick="closeModal('courseModal')" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-gray-500/50">
                         Cerrar
                     </button>
@@ -1003,9 +1002,13 @@
         
         // Course interaction
         function learnMore(courseId) {
+           
             const courseContent = document.getElementById('courseContent');
             let content = '';
+            let link = "";
+           
             
+        
             switch(courseId) {
                 case 'course1':
                     content = `
@@ -1020,6 +1023,7 @@
                         </ul>
                         <p class="mt-4"><strong>Duración:</strong> 8 semanas | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Videos, ejercicios prácticos y sesiones de grupo</p>
                     `;
+                     link = "https://go.hotmart.com/X81967713F";
                     break;
                 case 'course2':
                     content = `
@@ -1034,6 +1038,7 @@
                         </ul>
                         <p class="mt-4"><strong>Duración:</strong> 6 semanas | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Material descargable y certificación</p>
                     `;
+                     link = "https://go.hotmart.com/N81969297W";
                     break;
                 case 'course3':
                     content = `
@@ -1048,14 +1053,25 @@
                         </ul>
                         <p class="mt-4"><strong>Duración:</strong> A tu ritmo | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Acceso de por vida</p>
                     `;
+                     link = "https://go.hotmart.com/F82002329S";
                     break;
                 default:
                     content = '<p>Información del curso no disponible.</p>';
             }
-            
+
             courseContent.innerHTML = content;
+
+            // asignar link al botón
+            document.getElementById("btnInscribirse").onclick = function() {
+                window.open(link, "_blank"); // abre en nueva pestaña 
+                 };
+
+
             showModal('courseModal');
+
+            
         }
+
         
         // Video player
         function playVideo(videoId) {
@@ -1095,7 +1111,26 @@
                 showSuccessMessage('¡Iniciando proceso de inscripción!');
             }, 1500);
         }
-        
+       // Redirect to course URL
+        function redirectToCourse() {
+            const courseId = getCourseId();
+            let url = '';
+            switch(courseId) {
+                case 'course1':
+                    url = 'https://go.hotmart.com/X81967713F';
+                    break;
+                case 'course2':
+                    url = 'https://go.hotmart.com/N81969297W';
+                    break;
+                case 'course3':
+                    url = 'https://go.hotmart.com/F82002329S';
+                    break;
+                default:
+                    url = 'https://go.hotmart.com/Q81967476Y?ap=1444';
+            }
+            window.open(url, '_blank');
+        }
+
         // Contact
         function contactToday() {
             scrollToSection('contact');
