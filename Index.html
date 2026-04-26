@@ -147,6 +147,7 @@
             }
         }
     </style>
+    <meta name="google-site-verification" content="U5GUG_1aJtFqGMJ6yBuaSZ1WLH3yF5gypO2aqchEkIU" />
 </head>
 <body class="font-asap text-gray-900 overflow-x-hidden">
     <!-- Skip Navigation for Accessibility -->
@@ -1106,7 +1107,7 @@
             showLoadingOverlay();
 
             // Simulate enrollment process
-            setTimeout(() => {
+             setTimeout(() => {
                 hideLoadingOverlay();
                 showSuccessMessage('¡Iniciando proceso de inscripción!');
             }, 1500);
@@ -1213,12 +1214,14 @@
         function handleContactForm(event) {
             event.preventDefault();
             
-            const formData = new FormData(event.target);
+           const formData = new FormData(event.target);
             const data = {
                 name: formData.get('name'),
                 email: formData.get('email'),
                 phone: formData.get('phone'),
                 message: formData.get('message')
+
+
             };
             
             // Validate form
@@ -1230,7 +1233,7 @@
             
             showLoadingOverlay();
             
-            // Simulate form submission
+            //  form submission
             setTimeout(() => {
                 hideLoadingOverlay();
                 showSuccessMessage('¡Mensaje enviado exitosamente! Te contactaremos pronto.');
