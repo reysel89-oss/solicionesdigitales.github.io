@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Narad Digital Growth Solutions - Soluciones digitales para crecimiento personal. Cursos, coaching y herramientas transformadoras para tu desarrollo integral.">
+    <meta name="keywords" content="crecimiento personal, coaching digital, cursos online, desarrollo personal, transformación personal">
+    <meta name="author" content="Narad Digital Growth Solutions">
+    <meta property="og:title" content="Narad Digital Growth Solutions - Transforma Tu Vida Digitalmente">
+    <meta property="og:description" content="Soluciones digitales para crecer y superarte. Cursos de crecimiento personal, coaching y herramientas transformadoras.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://naraddigitalgrowth.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Soluciones Digitales para Crecer y Superarte- Soluciones Digitales Para Crecer Y Superarte</title>
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@300;400;500;700&family=Oxygen:wght@300;400;700&family=Nunito+Sans:wght@200;400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Custom TailwindCSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'asap': ['Asap', 'sans-serif'],
+                        'oxygen': ['Oxygen', 'sans-serif'],
+                        'nunito': ['Nunito Sans', 'sans-serif'],
+                        'roboto': ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#45de84',
+                        'primary-dark': '#3bc474',
+                        'secondary': '#8ad9f2',
+                        'secondary-dark': '#7bc9e1',
+                        'accent': '#01422b',
+                        'text-gray': '#54595f',
+                        'text-light': '#505b50'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'bounce-gentle': 'bounceGentle 2s infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                        'gradient': 'gradient 15s ease infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(50px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        bounceGentle: {
+                            '0%, 20%, 50%, 80%, 100%': { transform: 'translateY(0)' },
+                            '40%': { transform: 'translateY(-10px)' },
+                            '60%': { transform: 'translateY(-5px)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
+                        },
+                        gradient: {
+                            '0%, 100%': { backgroundPosition: '0% 50%' },
+                            '50%': { backgroundPosition: '100% 50%' }
+                        }
+                    },
+                    backdropBlur: {
+                        'xs': '2px',
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom Styles for Glassmorphism and Advanced Effects -->
+    <style>
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .text-shadow {
+            text-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #45de84, #8ad9f2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .loading-dots::after {
+            content: '';
+            animation: dots 1.5s linear infinite;
+        }
+        
+        @keyframes dots {
+            0%, 20% { content: ''; }
+            40% { content: '.'; }
+            60% { content: '..'; }
+            80%, 100% { content: '...'; }
+        }
+        
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .animate-fade-in,
+            .animate-slide-up,
+            .animate-bounce-gentle,
+            .animate-float {
+                animation: none;
+            }
+        }
+    </style>
+</head>
+<body class="font-asap text-gray-900 overflow-x-hidden">
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-md z-50">
+        Saltar al contenido principal
+    </a>
+    
+    <!-- Sticky Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-morphism transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl font-oxygen font-bold text-white">Soluciones Digitales</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#inicio" class="text-white hover:text-primary transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Inicio</a>
+                        <a href="#about" class="text-white hover:text-primary transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Nosotros</a>
+                        <a href="#products" class="text-white hover:text-primary transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Productos</a>
+                        <a href="#services" class="text-white hover:text-primary transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                        <a href="#contact" class="text-white hover:text-primary transition-colors duration-200 px-3 py-2 rounded-md text-sm font-medium">Contacto</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="text-white hover:text-primary focus:outline-none focus:text-primary transition-colors duration-200" id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">Abrir menú principal</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 glass-morphism">
+                <a href="#inicio" class="text-white hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Inicio</a>
+                <a href="#about" class="text-white hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Nosotros</a>
+                <a href="#products" class="text-white hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Productos</a>
+                <a href="#services" class="text-white hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Servicios</a>
+                <a href="#contact" class="text-white hover:text-primary block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="relative">
+        <!-- Hero Section -->
+        <section id="inicio" class="relative min-h-screen bg-gradient-to-br from-accent via-green-700 to-green-900 flex items-center justify-center overflow-hidden">
+            <!-- Animated Background Elements -->
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-primary/20 to-transparent rounded-full animate-float" style="animation-delay: 0s;"></div>
+                <div class="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-secondary/20 to-transparent rounded-full animate-float" style="animation-delay: 2s;"></div>
+            </div>
+            
+            <!-- Social Icons -->
+            <div class="fixed left-4 top-1/2 transform -translate-y-1/2 z-40 space-y-4 hidden lg:flex flex-col">
+                <a href="https://www.facebook.com/100091563954274/videos/336733645640835/?rdid=Bg97xqdXcQTi7gcD" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="Facebook">
+                    <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/watch?v=iSWnou8px8A&ab_channel=MARKETINGDIGITALEVERYONEBUYSANDSELLS" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="Youtube">
+                    <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.08C19.632 3.5 12 3.5 12 3.5s-7.632 0-9.418.606a2.958 2.958 0 0 0-2.08 2.08C0 7.97 0 12 0 12s0 4.03.502 5.814a2.958 2.958 0 0 0 2.08 2.08C4.368 20.5 12 20.5 12 20.5s7.632 0 9.418-.606a2.958 2.958 0 0 0 2.08-2.08C24 16.03 24 12 24 12s0-4.03-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@desarrollopersona77?is_from_webapp=1&sender_device=pc" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="tiktok">
+                    <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.465,9.866c-2.139,0-4.122-0.684-5.74-1.846v8.385c0,4.188-3.407,7.594-7.594,7.594c-1.618,0-3.119-0.51-4.352-1.376  
+                        c-1.958-1.375-3.242-3.649-3.242-6.218c0-4.188,3.407-7.595,7.595-7.595c0.348,0,0.688,0.029,1.023,0.074v0.977v3.235  
+                        c-0.324-0.101-0.666-0.16-1.023-0.16c-1.912,0-3.468,1.556-3.468,3.469c0,1.332,0.756,2.489,1.86,3.07  
+                        c0.481,0.253,1.028,0.398,1.609,0.398c1.868,0,3.392-1.486,3.462-3.338L12.598,0h4.126c0,0.358,0.035,0.707,0.097,1.047  
+                        c0.291,1.572,1.224,2.921,2.517,3.764c0.9,0.587,1.974,0.93,3.126,0.93V9.866z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/desarrollopersonal219/?igsh=MXJnNXFpeWxnem4xcw%3D%3D" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="Instagram">
+                    <svg class="w-6 h-6 text-white group-hover:text-primary transition-colors duration-300" viewBox="0 0 512 512" fill="currentColor">
+                        <path d="M349.33 69.33H162.67C107.61 69.33 64 112.94 64 168v176c0 55.06 43.61 98.67 98.67 98.67h186.66C404.39 442.67 448 399.06 448 344V168c0-55.06-43.61-98.67-98.67-98.67zM256 346.67c-50.03 0-90.67-40.64-90.67-90.67s40.64-90.67 90.67-90.67 90.67 40.64 90.67 90.67-40.64 90.67-90.67 90.67zm96-170.67a21.33 21.33 0 1 1 21.33-21.33 21.35 21.35 0 0 1-21.33 21.33z"/>
+                        <circle cx="256" cy="256" r="60"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-30">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Hero Content -->
+                    <div class="text-center lg:text-left space-y-8 animate-fade-in">
+                        <!-- Tagline -->
+                        <div class="flex items-center justify-center lg:justify-start space-x-4">
+                            <div class="w-1 h-16 bg-primary animate-bounce-gentle"></div>
+                            <h2 class="text-xl md:text-2xl font-asap font-light text-white">Transforma Tu Vida Digitalmente</h2>
+                        </div>
+                        
+                        <!-- Main Title -->
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-oxygen font-bold text-white text-shadow leading-tight">
+                            Soluciones Digitales<br>
+                            <span class="gradient-text">para Crecer y</span><br>
+                            Superarte
+                        </h1>
+                        
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="https://go.hotmart.com/U99741004M" target="_blank"> 
+                            <button onclick="scrollToSection('products')" class="group bg-primary hover:bg-primary-dark text-white font-asap font-medium text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                                <span class="group-hover:animate-pulse">Tecnología</span>
+                            </button>
+                            </a>
+                            <a href="https://go.hotmart.com/J81994631K" target="_blank">
+                            <button onclick="scrollToSection('about')" class="group glass-morphism text-white font-asap font-medium text-lg px-8 py-4 rounded-lg shadow-2xl hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white/50 uppercase tracking-wider">
+                                <span class="group-hover:animate-pulse">Inversión</span>
+                            </button>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Image/Animation -->
+                    <div class="relative animate-slide-up">
+                        <div class="relative">
+                            <div class="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-full blur-3xl opacity-30 animate-pulse"></div>
+                            <div class="relative bg-white/10 backdrop-blur-lg rounded-3xl p-8 glass-morphism">
+                                <div class="space-y-6">
+                                    <div class="h-4 bg-gradient-to-r from-primary to-secondary rounded-full animate-pulse"></div>
+                                    <div class="space-y-3">
+                                        <div class="h-3 bg-white/50 rounded-full w-3/4 animate-pulse" style="animation-delay: 0.1s;"></div>
+                                        <div class="h-3 bg-white/50 rounded-full w-1/2 animate-pulse" style="animation-delay: 0.2s;"></div>
+                                        <div class="h-3 bg-white/50 rounded-full w-5/6 animate-pulse" style="animation-delay: 0.3s;"></div>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <div class="h-8 w-8 bg-primary rounded-full animate-bounce" style="animation-delay: 0s;"></div>
+                                        <div class="h-8 w-8 bg-secondary rounded-full animate-bounce" style="animation-delay: 0.1s;"></div>
+                                        <div class="h-8 w-8 bg-white/50 rounded-full animate-bounce" style="animation-delay: 0.2s;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-gentle">
+                <button onclick="scrollToSection('about')" class="text-white hover:text-primary transition-colors duration-300 focus:outline-none focus:text-primary" aria-label="Scroll to about section">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="py-20 lg:py-32 bg-white relative overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Content -->
+                    <div class="space-y-8 animate-fade-in">
+                        <!-- Section Header -->
+                        <div class="flex items-center space-x-4">
+                            <div class="w-1 h-12 bg-primary"></div>
+                            <h3 class="text-lg md:text-xl font-asap text-primary">Despierta Tu Potencial</h3>
+                        </div>
+                        
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-primary leading-tight">
+                            Tu Tienda de Crecimiento<br>
+                            Personal Digital
+                        </h2>
+                        
+                        <p class="text-lg md:text-xl font-asap font-light text-text-gray leading-relaxed">
+                            Nuestra tienda digital de crecimiento personal ofrece herramientas, cursos y recursos diseñados para potenciar el desarrollo integral de las personas. A través de productos digitales como ebooks, talleres en línea, guías prácticas y programas de coaching, ayudamos a nuestros usuarios a mejorar su bienestar emocional, mental y espiritual.
+                        </p>
+                        
+                        <button onclick="showModal('aboutModal')" class="group bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-asap font-medium px-8 py-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                            <span class="group-hover:animate-pulse">Sobre Nosotros</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Image -->
+                    <div class="relative animate-slide-up">
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl transform rotate-3"></div>
+                        <img src="./assets/images/img_pexelspaveldanilyuk7120911jpg.png" alt="Personal growth consultation" class="relative w-full h-auto rounded-3xl shadow-2xl hover-lift" loading="lazy">
+                        
+                        <!-- Floating Stats -->
+                        <div class="absolute -bottom-6 -left-6 glass-card rounded-2xl p-6 shadow-xl">
+                            <div class="text-center">
+                                <div class="text-2xl font-oxygen font-bold text-primary counter" data-target="1000">0</div>
+                                <div class="text-sm font-asap text-text-gray">Vidas Transformadas</div>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -top-6 -right-6 glass-card rounded-2xl p-6 shadow-xl">
+                            <div class="text-center">
+                                <div class="text-2xl font-oxygen font-bold text-primary counter" data-target="50">0</div>
+                                <div class="text-sm font-asap text-text-gray">Cursos Disponibles</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mission, Vision, Technology Cards -->
+                <div class="mt-20 grid md:grid-cols-3 gap-8">
+                    <div class="glass-card rounded-2xl p-8 hover-lift animate-fade-in" style="animation-delay: 0.1s;">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Misión</h3>
+                        <p class="font-asap font-light text-text-gray leading-relaxed">
+                            Empoderar a las personas a través de herramientas digitales que impulsen su crecimiento personal, emocional y espiritual. Facilitamos el acceso a recursos transformadores que inspiren autoconocimiento, bienestar y una vida con propósito.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card rounded-2xl p-8 hover-lift animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="w-16 h-16 bg-gradient-to-br from-secondary to-primary rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Visión</h3>
+                        <p class="font-asap font-light text-text-gray leading-relaxed">
+                            Ser un referente global en el crecimiento personal digital, creando un espacio accesible donde millones de personas encuentren las herramientas necesarias para transformar su vida y construir una comunidad consciente.
+                        </p>
+                    </div>
+                    
+                    <div class="glass-card rounded-2xl p-8 hover-lift animate-fade-in" style="animation-delay: 0.3s;">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Tecnología</h3>
+                        <p class="font-asap font-light text-text-gray leading-relaxed">
+                            Integra tecnología de forma intuitiva y accesible utilizando plataformas seguras, herramientas digitales avanzadas y experiencias transformadoras que conectan el conocimiento con la comodidad del entorno digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Products Section -->
+        <section id="products" class="py-20 lg:py-32 bg-gradient-to-br from-blue-500/80 via-primary/80 to-secondary/80 relative overflow-hidden">
+            <!-- Background Elements -->
+            <div class="absolute inset-0">
+                <div class="absolute top-0 left-0 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-float" style="animation-delay: 0s;"></div>
+                <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" style="animation-delay: 2s;"></div>
+            </div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-16 animate-fade-in">
+                    <div class="flex items-center justify-center space-x-4 mb-6">
+                        <div class="w-1 h-12 bg-white"></div>
+                        <h3 class="text-lg md:text-xl font-asap text-white">Algunos de Nuestros Productos</h3>
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-white mb-8 leading-tight">
+                        Conviértete en tu<br>
+                        <span class="text-yellow-300">Mejor Inversión</span>
+                    </h2>
+                </div>
+                
+                <!-- Products Grid -->
+                <div class="grid lg:grid-cols-3 gap-8 xl:gap-12">
+                    <!-- Product 1 -->
+                    <div class="group glass-card rounded-3xl overflow-hidden hover-lift animate-fade-in" style="animation-delay: 0.1s;">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/images/img_026091343039af391c044e1932185ce1.png" alt="Sanar a Mamá en Ti course" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h3 class="text-xl font-oxygen font-bold text-primary mb-4 line-clamp-2">
+                                "Sanar a Mamá en Ti: Libérate del Dolor Heredado y Recupera tu Poder"
+                            </h3>
+                            
+                            <div class="space-y-3 mb-6">
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">¿Sientes que algo en tu vida está bloqueado y no sabes por qué?</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Un viaje profundo y transformador para reconocer, comprender y sanar la herida materna.</p>
+                            </div>
+                            
+                            <button onclick="learnMore('course1')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                                <span class="loading-dots">Aprende Más</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="group glass-card rounded-3xl overflow-hidden hover-lift animate-fade-in" style="animation-delay: 0.2s;">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/images/img_tarjetacurso1.png" alt="Emotional Intelligence course" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h3 class="text-xl font-oxygen font-bold text-primary mb-4 line-clamp-2">
+                                Desarrolla tu Inteligencia Emocional para educar niños emocionalmente sanos
+                            </h3>
+                            
+                            <div class="space-y-3 mb-6">
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Responde a la necesidad de preparación para educar niños con todas sus potencialidades.</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Conviértete en un buen modelo para su desarrollo integral.</p>
+                            </div>
+                            
+                            <button onclick="learnMore('course2')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                                <span class="loading-dots">Aprende Más</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="group glass-card rounded-3xl overflow-hidden hover-lift animate-fade-in" style="animation-delay: 0.3s;">
+                        <div class="relative overflow-hidden">
+                            <img src="./assets/images/img_portadaapaisada.png" alt="Consciousness course" class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                        
+                        <div class="p-8">
+                            <h3 class="text-xl font-oxygen font-bold text-primary mb-4 line-clamp-2">
+                                "Abre tu Conciencia para ser Feliz" - El Conocimiento que te devolverá tu Poder
+                            </h3>
+                            
+                            <div class="space-y-3 mb-6">
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">47 Videos tutoriales para aprender a ser feliz. Despertar es ver con más claridad.</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Contenido valioso para vivir una vida de plenitud y felicidad.</p>
+                            </div>
+                            
+                            <button onclick="learnMore('course3')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                                <span class="loading-dots">Aprende Más</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Strategy Section -->
+        <section class="py-20 lg:py-32 bg-white relative overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Content -->
+                    <div class="space-y-8 animate-fade-in">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-1 h-12 bg-primary"></div>
+                            <h3 class="text-lg md:text-xl font-asap text-primary">Estrategia Ejecutiva</h3>
+                        </div>
+                        
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-primary leading-tight">
+                            EL ASOMBROSO PODER<br>
+                            DEL <span class="gradient-text">PENSAMIENTO</span><br>
+                            POSITIVO
+                        </h2>
+                        
+                        <p class="text-lg font-asap text-primary mb-4">
+                            Este e-book está creado para aquellos individuos que quieran conocer sobre el pensamiento positivo.
+                        </p>
+                        
+                        <p class="font-asap font-light text-text-gray leading-relaxed">
+                            En un mundo perfecto, solo habría sucesos positivos y experimentaríamos solo emociones y pensamientos positivos. A lo largo de este libro electrónico, descubrirás los numerosos y maravillosos beneficios del pensamiento positivo...
+                        </p>
+                        <a href="https://go.hotmart.com/F81988361I?ap=cd14" target="_blank">
+                        <button onclick="investToday()" class="group bg-primary hover:bg-primary-dark text-white font-asap font-medium px-8 py-4 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                            <span class="group-hover:animate-pulse">Invierte Hoy</span>
+                        </button>
+                        </a>
+                    </div>
+                    
+                    <!-- Image and Testimonial -->
+                    <div class="relative animate-slide-up">
+                        <div class="relative">
+                            <img src="./assets/images/img_caratulahotmart.png" alt="Positive thinking book cover" class="w-full h-auto rounded-3xl shadow-2xl" loading="lazy">
+                            
+                            <!-- Floating Testimonial -->
+                            <div class="absolute -bottom-8 -left-8 glass-card rounded-2xl p-6 shadow-xl max-w-sm">
+                                <div class="flex items-start space-x-4">
+                                    <img src="./assets/images/img_symbolefemininiconenoirepng.png" alt="Eugenia avatar" class="w-12 h-12 rounded-full" loading="lazy">
+                                    <div>
+                                        <p class="font-nunito text-gray-800 text-sm mb-2 leading-relaxed">
+                                            "Super libro me ayudó mucho a pensar mejor sobre mi actitud y positividad"
+                                        </p>
+                                        <div>
+                                            <h4 class="font-nunito font-bold text-xs text-gray-500 uppercase tracking-wider">EUGENIA</h4>
+                                            <p class="font-asap text-xs text-text-gray">Evaluadora</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Renace Section -->
+        <section id="services" class="py-20 lg:py-32 relative overflow-hidden">
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0">
+                <img src="./assets/images/img_image.png" alt="Background" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-500/70 via-primary/70 to-secondary/70"></div>
+            </div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Content -->
+                    <div class="space-y-8 animate-fade-in">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-1 h-12 bg-white"></div>
+                            <h3 class="text-lg md:text-xl font-asap text-white">Nuestras Soluciones</h3>
+                        </div>
+                        
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-white leading-tight">
+                            Renace: El Viaje hacia tu<br>
+                            <span class="text-yellow-300">Mejor Versión</span>
+                        </h2>
+                        
+                        <p class="text-lg md:text-xl font-asap font-light text-white leading-relaxed">
+                            Reinvéntate sin perder tu esencia. Aprende a soltar el pasado, rediseñar tu identidad y construir una nueva versión de ti basada en tus valores y aspiraciones más profundas.
+                        </p>
+                        
+                        <button onclick="exploreServices()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white/50 uppercase tracking-wider">
+                            <span class="group-hover:animate-pulse">Servicios</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Gallery Grid -->
+                    <div class="grid grid-cols-2 gap-4 animate-slide-up">
+                        <div class="space-y-4">
+                            <div class="relative group cursor-pointer">
+                                <img src="./assets/images/img_image_107x250.png" alt="Renace gallery 1" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://www.youtube.com/watch?v=cjq8SVglBHE&ab_channel=AldoCivico" target="_blank">
+                                    <button onclick="playVideo('video1')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 1">
+                                        <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative group cursor-pointer">
+                                <img src="./assets/images/img_image_1.png" alt="Renace gallery 2" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://www.youtube.com/watch?v=5hy2eUhAIbE&ab_channel=GaboPi%C3%B1eros" target="_blank">
+                                    <button onclick="playVideo('video2')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 2">
+                                        <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-4 mt-8">
+                            <div class="relative group cursor-pointer">
+                                <img src="./assets/images/img_image_125x257.png" alt="Renace gallery 3" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://www.youtube.com/watch?v=j3kUUYZaURI&ab_channel=DanaBek" target="_blank">
+                                    <button onclick="playVideo('video3')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 3">
+                                        <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="relative group cursor-pointer">
+                                <img src="./assets/images/img_image_2.png" alt="Renace gallery 4" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
+                                <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <a href="https://www.youtube.com/watch?v=lA8lo9Uj3mo&ab_channel=TransformYourPower" target="_blank">
+                                    <button onclick="playVideo('video4')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 4">
+                                        <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Financial Education Section -->
+        <section class="py-20 lg:py-32 bg-white relative overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Content -->
+                    <div class="space-y-8 animate-fade-in">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-1 h-12 bg-primary"></div>
+                            <h3 class="text-lg md:text-xl font-asap text-primary">Educación Financiera</h3>
+                        </div>
+                        
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-primary leading-tight">
+                            Capitaliza tu Pasión para<br>
+                            <span class="gradient-text">Adolescentes</span>
+                        </h2>
+                        
+                        <p class="font-asap text-text-gray leading-relaxed">
+                            ¿Sabías que el 95% de la población mundial no está feliz con su trabajo?
+                        </p>
+                        
+                        <!-- Statistics -->
+                        <div class="grid grid-cols-3 gap-8">
+                            <div class="text-center">
+                                <div class="text-3xl lg:text-4xl font-oxygen font-bold text-primary mb-2">
+                                    +<span class="counter" data-target="45.7">0</span>%
+                                </div>
+                                <p class="text-sm font-asap text-primary">menos costos</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl lg:text-4xl font-oxygen font-bold text-primary mb-2">
+                                    +<span class="counter" data-target="36.6">0</span>%
+                                </div>
+                                <p class="text-sm font-asap text-primary">más poder</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl lg:text-4xl font-oxygen font-bold text-primary mb-2">
+                                    +<span class="counter" data-target="78.2">0</span>%
+                                </div>
+                                <p class="text-sm font-asap text-primary">energías limpias</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Promo Card -->
+                    <div class="relative animate-slide-up">
+                        <div class="bg-gradient-to-br from-blue-500/76 via-primary/76 to-secondary/76 rounded-3xl p-8 relative overflow-hidden">
+                            <!-- Background Pattern -->
+                            <div class="absolute inset-0 opacity-20">
+                                <div class="absolute top-0 left-0 w-32 h-32 bg-white rounded-full blur-xl"></div>
+                                <div class="absolute bottom-0 right-0 w-40 h-40 bg-yellow-300 rounded-full blur-xl"></div>
+                            </div>
+                            
+                            <div class="relative z-10 h-96 flex flex-col justify-end">
+                                <div class="flex items-end justify-between">
+                                    <a href="https://go.hotmart.com/Q81967476Y?ap=1444" target="_blank">
+                                    <button onclick="enrollNow()" class="group glass-card rounded-2xl p-6 hover-lift transition-all duration-300 max-w-xs">
+                                        <div class="w-1 h-4 bg-primary mb-4"></div>
+                                        <p class="text-lg font-asap font-light text-gray-800 leading-tight">
+                                            Inscríbete ya y comienza hoy
+                                        </p>
+                                    </button>
+                                    </a>
+                                    <a href="https://www.youtube.com/watch?v=O-lofk-HOf8&t=2s&ab_channel=Blacks.University%C2%AE" target="_blank">
+                                    <button onclick="enrollNow()" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Enroll now">
+                                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                        </svg>
+                                    </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section class="py-20 lg:py-32 bg-cover bg-center bg-fixed relative overflow-hidden parallax" style="background-image: url('./assets/images/img_imagebackground.png')">
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/60"></div>
+            
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <!-- Content -->
+                    <div class="space-y-8 animate-fade-in">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-1 h-16 bg-white"></div>
+                            <h3 class="text-lg md:text-xl font-asap text-white">Experiencia</h3>
+                        </div>
+                        
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-white leading-tight">
+                            Plan de Acción para una Vida<br>
+                            <span class="text-yellow-300">Extraordinaria</span>
+                        </h2>
+                        
+                        <p class="text-lg md:text-xl font-asap font-light text-white leading-relaxed">
+                            Diseña tu vida con intención. Este producto digital combina ejercicios de claridad, metas y hábitos para ayudarte a construir un estilo de vida equilibrado, consciente y lleno de propósito.
+                        </p>
+                        
+                        <button onclick="contactToday()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white/50 uppercase tracking-wider">
+                            <span class="group-hover:animate-pulse">Contáctanos Hoy</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Statistics Cards -->
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-end animate-slide-up">
+                        <div class="glass-card rounded-2xl p-8 text-center hover-lift">
+                            <div class="text-4xl lg:text-5xl font-oxygen font-bold text-primary mb-4">
+                                +<span class="counter" data-target="120">0</span>
+                            </div>
+                            <p class="text-lg font-asap text-primary">proyectos</p>
+                        </div>
+                        
+                        <div class="glass-card rounded-2xl p-8 text-center hover-lift">
+                            <div class="text-4xl lg:text-5xl font-oxygen font-bold text-primary mb-4">
+                                +<span class="counter" data-target="17">0</span>
+                            </div>
+                            <p class="text-lg font-asap text-primary">países</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 lg:py-32 bg-gray-50 relative overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <div class="space-y-8 animate-fade-in">
+                        <div class="flex items-center justify-center space-x-4">
+                            <div class="w-1 h-12 bg-primary"></div>
+                            <h3 class="text-lg md:text-xl font-asap text-primary">Contacto</h3>
+                        </div>
+                        
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-primary leading-tight">
+                            ¿Listo para <span class="gradient-text">Transformar</span> tu Vida?
+                        </h2>
+                        
+                        <p class="text-lg md:text-xl font-asap font-light text-text-gray leading-relaxed max-w-2xl mx-auto">
+                            Únete a miles de personas que ya han comenzado su viaje de transformación personal. El momento perfecto para empezar es ahora.
+                        </p>
+                        
+                        <!-- Contact Form -->
+                        <form class="max-w-lg mx-auto space-y-6" id="contactForm" onsubmit="handleContactForm(event)">
+                            <div>
+                                <label for="name" class="sr-only">Nombre completo</label>
+                                <input type="text" id="name" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap">
+                            </div>
+                            <div>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap">
+                            </div>
+                            <div>
+                                <label for="phone" class="sr-only">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap">
+                            </div>
+                            <div>
+                                <label for="message" class="sr-only">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" placeholder="¿En qué te podemos ayudar?" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-4 px-6 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                                <span class="loading-dots">Enviar Mensaje</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <h3 class="text-2xl font-oxygen font-bold mb-4">Soluciones Digitales para Crecer y Superarte</h3>
+                    <p class="font-asap text-gray-300 leading-relaxed mb-6">
+                        Transformando vidas a través del crecimiento personal digital. Únete a nuestra comunidad y descubre tu verdadero potencial.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/100091563954274/videos/336733645640835/?rdid=Bg97xqdXcQTi7gcD" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="Facebook">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=iSWnou8px8A&ab_channel=MARKETINGDIGITALEVERYONEBUYSANDSELLS" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="Youtube">
+                            <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.08C19.632 3.5 12 3.5 12 3.5s-7.632 0-9.418.606a2.958 2.958 0 0 0-2.08 2.08C0 7.97 0 12 0 12s0 4.03.502 5.814a2.958 2.958 0 0 0 2.08 2.08C4.368 20.5 12 20.5 12 20.5s7.632 0 9.418-.606a2.958 2.958 0 0 0 2.08-2.08C24 16.03 24 12 24 12s0-4.03-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/desarrollopersonal219/?igsh=MXJnNXFpeWxnem4xcw%3D%3D" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="Instagram">
+                            <svg class="w-6 h-6 text-white group-hover:text-pink-500 transition-colors duration-300" viewBox="0 0 512 512" fill="currentColor">
+                                <path d="M349.33 69.33H162.67C107.61 69.33 64 112.94 64 168v176c0 55.06 43.61 98.67 98.67 98.67h186.66C404.39 442.67 448 399.06 448 344V168c0-55.06-43.61-98.67-98.67-98.67zM256 346.67c-50.03 0-90.67-40.64-90.67-90.67s40.64-90.67 90.67-90.67 90.67 40.64 90.67 90.67-40.64 90.67-90.67 90.67zm96-170.67a21.33 21.33 0 1 1 21.33-21.33 21.35 21.35 0 0 1-21.33 21.33z"/>
+                                <circle cx="256" cy="256" r="60"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-oxygen font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2 font-asap">
+                        <li><a href="#inicio" class="text-gray-300 hover:text-primary transition-colors duration-200">Inicio</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-primary transition-colors duration-200">Nosotros</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-primary transition-colors duration-200">Productos</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-primary transition-colors duration-200">Servicios</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-primary transition-colors duration-200">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-oxygen font-bold mb-4">Contacto</h4>
+                    <div class="space-y-2 font-asap text-gray-300">
+                        <p>Email:marketingdigitaleveryonebun@gmail.com</p>
+                        <p>Teléfono: +57 (320) 53-99771</p>
+                        <p>Horario: Lun-Vie 9:00-18:00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="font-roboto text-gray-400">
+                    © 2024 Soluciones Digitales para Crecer y Superarte. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modals -->
+    <div id="aboutModal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4" role="dialog" aria-labelledby="aboutModalTitle" aria-hidden="true">
+        <div class="glass-card rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 id="aboutModalTitle" class="text-2xl font-oxygen font-bold text-primary">Sobre Nosotros</h2>
+                    <button onclick="closeModal('aboutModal')" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2" aria-label="Cerrar modal">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="space-y-6 font-asap text-text-gray leading-relaxed">
+                    <p>
+                        En Soluciones Digitales para Crecer y Superarte, creemos que cada persona tiene un potencial ilimitado esperando ser descubierto. Nuestra misión es proporcionar las herramientas digitales más efectivas para el crecimiento personal y profesional.
+                    </p>
+                    
+                    <p>
+                        Nuestro equipo está compuesto por expertos en psicología, coaching, tecnología y desarrollo personal que trabajan juntos para crear experiencias transformadoras que realmente marquen la diferencia en la vida de las personas.
+                    </p>
+                    
+                    <p>
+                        Utilizamos las últimas tecnologías y metodologías probadas para ofrecer cursos, talleres y herramientas que se adapten a tu ritmo de vida y necesidades específicas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="courseModal" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 p-4" role="dialog" aria-labelledby="courseModalTitle" aria-hidden="true">
+        <div class="glass-card rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-8">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 id="courseModalTitle" class="text-2xl font-oxygen font-bold text-primary">Información del Curso</h2>
+                    <button onclick="closeModal('courseModal')" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2" aria-label="Cerrar modal">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="space-y-6 font-asap text-text-gray leading-relaxed" id="courseContent">
+                    <p>Descubre todos los detalles de nuestros cursos de crecimiento personal diseñados para transformar tu vida.</p>
+                </div>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <button onclick="enrollNow()" class="flex-1 bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50">
+                        Inscribirse Ahora
+                    </button>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <button onclick="closeModal('courseModal')" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-gray-500/50">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="glass-card rounded-2xl p-8 text-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-4 border-primary border-t-transparent mx-auto mb-4"></div>
+            <p class="font-asap text-text-gray">Cargando...</p>
+        </div>
+    </div>
+    
+    <!-- Success Message Template -->
+    <div id="successMessageTemplate" class="fixed top-4 right-4 bg-primary text-white px-6 py-4 rounded-lg shadow-xl transform translate-x-full transition-transform duration-300 z-50 hidden">
+        <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span class="font-asap font-medium" id="successMessageText">¡Mensaje enviado exitosamente!</span>
+        </div>
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        // Navigation functionality
+        const navbar = document.getElementById('navbar');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-black/20');
+            } else {
+                navbar.classList.remove('bg-black/20');
+            }
+        });
+        
+        // Mobile menu toggle
+        mobileMenuButton.addEventListener('click', () => {
+            const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+            mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                const offsetTop = element.offsetTop - 80; // Account for fixed navbar
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        // Modal functionality
+        function showModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                
+                // Focus first focusable element
+                const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+                if (focusableElements.length > 0) {
+                    focusableElements[0].focus();
+                }
+            }
+        }
+        
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                modal.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+            }
+        }
+        
+        // Course interaction
+        function learnMore(courseId) {
+            const courseContent = document.getElementById('courseContent');
+            let content = '';
+            
+            switch(courseId) {
+                case 'course1':
+                    content = `
+                        <h3 class="text-xl font-oxygen font-bold text-primary mb-4">Sanar a Mamá en Ti</h3>
+                        <p>Un curso transformador que te ayuda a:</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Identificar patrones heredados de tu relación materna</li>
+                            <li>Sanar heridas emocionales profundas</li>
+                            <li>Recuperar tu poder personal y autoestima</li>
+                            <li>Establecer límites saludables en tus relaciones</li>
+                            <li>Desarrollar una relación amorosa contigo mismo/a</li>
+                        </ul>
+                        <p class="mt-4"><strong>Duración:</strong> 8 semanas | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Videos, ejercicios prácticos y sesiones de grupo</p>
+                    `;
+                    break;
+                case 'course2':
+                    content = `
+                        <h3 class="text-xl font-oxygen font-bold text-primary mb-4">Inteligencia Emocional para Educadores</h3>
+                        <p>Desarrolla las habilidades necesarias para:</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Comprender y gestionar tus propias emociones</li>
+                            <li>Ayudar a los niños a desarrollar inteligencia emocional</li>
+                            <li>Crear ambientes de aprendizaje emocionalmente seguros</li>
+                            <li>Manejar situaciones difíciles con calma y sabiduría</li>
+                            <li>Ser un modelo positivo de regulación emocional</li>
+                        </ul>
+                        <p class="mt-4"><strong>Duración:</strong> 6 semanas | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Material descargable y certificación</p>
+                    `;
+                    break;
+                case 'course3':
+                    content = `
+                        <h3 class="text-xl font-oxygen font-bold text-primary mb-4">Abre tu Conciencia para ser Feliz</h3>
+                        <p>47 videos tutoriales que te enseñan:</p>
+                        <ul class="list-disc list-inside space-y-2 ml-4">
+                            <li>Técnicas de mindfulness y meditación</li>
+                            <li>Cómo liberarte de patrones limitantes</li>
+                            <li>Desarrollar una mentalidad de abundancia</li>
+                            <li>Encontrar tu propósito de vida</li>
+                            <li>Vivir en el presente con plenitud</li>
+                        </ul>
+                        <p class="mt-4"><strong>Duración:</strong> A tu ritmo | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Acceso de por vida</p>
+                    `;
+                    break;
+                default:
+                    content = '<p>Información del curso no disponible.</p>';
+            }
+            
+            courseContent.innerHTML = content;
+            showModal('courseModal');
+        }
+        
+        // Video player
+        function playVideo(videoId) {
+            showLoadingOverlay();
+            
+            // Simulate video loading
+            setTimeout(() => {
+                hideLoadingOverlay();
+                showSuccessMessage(`Reproduciendo video: ${videoId}`);
+            }, 1500);
+        }
+        
+        // Investment action
+        function investToday() {
+            showLoadingOverlay();
+            
+            // Simulate navigation
+            setTimeout(() => {
+                hideLoadingOverlay();
+                showSuccessMessage('Redirigiendo a la página de inversión...');
+            }, 1000);
+        }
+        
+        // Services exploration
+        function exploreServices() {
+            scrollToSection('contact');
+            showSuccessMessage('¡Contáctanos para conocer todos nuestros servicios!');
+        }
+        
+        // Enrollment
+        function enrollNow() {
+            showLoadingOverlay();
+
+            // Simulate enrollment process
+            setTimeout(() => {
+                hideLoadingOverlay();
+                showSuccessMessage('¡Iniciando proceso de inscripción!');
+            }, 1500);
+        }
+        
+        // Contact
+        function contactToday() {
+            scrollToSection('contact');
+        }
+        
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseFloat(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = current.toFixed(1);
+                        setTimeout(updateCounter, 20);
+                    } else {
+                        counter.textContent = target.toString();
+                    }
+                };
+                
+                updateCounter();
+            });
+        }
+        
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    
+                    // Trigger counter animation for elements with counters
+                    if (entry.target.querySelector('.counter')) {
+                        animateCounters();
+                    }
+                }
+            });
+        }, observerOptions);
+        
+        // Loading overlay functions
+        function showLoadingOverlay() {
+            const overlay = document.getElementById('loadingOverlay');
+            overlay.classList.remove('hidden');
+            overlay.classList.add('flex');
+        }
+        
+        function hideLoadingOverlay() {
+            const overlay = document.getElementById('loadingOverlay');
+            overlay.classList.add('hidden');
+            overlay.classList.remove('flex');
+        }
+        
+        // Success message function
+        function showSuccessMessage(message) {
+            const template = document.getElementById('successMessageTemplate');
+            const messageText = document.getElementById('successMessageText');
+            
+            messageText.textContent = message;
+            template.classList.remove('hidden', 'translate-x-full');
+            template.classList.add('translate-x-0');
+            
+            setTimeout(() => {
+                template.classList.add('translate-x-full');
+                template.classList.remove('translate-x-0');
+                
+                setTimeout(() => {
+                    template.classList.add('hidden');
+                }, 300);
+            }, 3000);
+        }
+        
+        // Form handling
+        function handleContactForm(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                phone: formData.get('phone'),
+                message: formData.get('message')
+            };
+            
+            // Validate form
+            const errors = validateForm(data);
+            if (errors.length > 0) {
+                alert('Por favor corrige los siguientes errores:\n' + errors.join('\n'));
+                return;
+            }
+            
+            showLoadingOverlay();
+            
+            // Simulate form submission
+            setTimeout(() => {
+                hideLoadingOverlay();
+                showSuccessMessage('¡Mensaje enviado exitosamente! Te contactaremos pronto.');
+                event.target.reset();
+            }, 2000);
+        }
+        
+        // Form validation
+        function validateForm(formData) {
+            const errors = [];
+            
+            if (!formData.name || formData.name.length < 2) {
+                errors.push('El nombre debe tener al menos 2 caracteres');
+            }
+            
+            if (!formData.email || !formData.email.includes('@')) {
+                errors.push('Email válido es requerido');
+            }
+            
+            if (!formData.message || formData.message.length < 10) {
+                errors.push('El mensaje debe tener al menos 10 caracteres');
+            }
+            
+            return errors;
+        }
+        
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Observe animated elements
+            const animatedElements = document.querySelectorAll('.animate-fade-in, .animate-slide-up');
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Observe counter elements
+            const counterContainers = document.querySelectorAll('[class*="counter"]');
+            counterContainers.forEach(container => {
+                observer.observe(container.closest('section') || container);
+            });
+            
+            // Close modals on outside click
+            window.addEventListener('click', (event) => {
+                const modals = document.querySelectorAll('.modal');
+                modals.forEach(modal => {
+                    if (event.target === modal) {
+                        closeModal(modal.id);
+                    }
+                });
+            });
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    const openModals = document.querySelectorAll('.modal:not(.hidden)');
+                    openModals.forEach(modal => {
+                        closeModal(modal.id);
+                    });
+                }
+            });
+            
+            // Smooth scroll for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    scrollToSection(targetId);
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                });
+            });
+            
+            // Add loading states to buttons
+            document.querySelectorAll('button').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (!this.disabled && !this.classList.contains('loading')) {
+                        this.classList.add('loading');
+                        this.disabled = true;
+                        
+                        setTimeout(() => {
+                            this.classList.remove('loading');
+                            this.disabled = false;
+                        }, 2000);
+                    }
+                });
+            });
+        });
+        
+        // Performance optimizations
+        
+        // Lazy loading for images
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.src = img.src;
+            });
+        } else {
+            // Fallback for browsers that don't support lazy loading
+            const script = document.createElement('script');
+            script.src = 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver';
+            document.head.appendChild(script);
+        }
+        
+        // Preload critical images
+        const criticalImages = [
+            './assets/images/img_pexelspaveldanilyuk7120911jpg.png',
+            './assets/images/img_026091343039af391c044e1932185ce1.png',
+            './assets/images/img_caratulahotmart.png'
+        ];
+        
+        criticalImages.forEach(src => {
+            const link = document.createElement('link');
+            link.rel = 'preload';
+            link.as = 'image';
+            link.href = src;
+            document.head.appendChild(link);
+        });
+        
+        // Error handling
+        window.addEventListener('error', (event) => {
+            console.error('Error occurred:', event.error);
+            showSuccessMessage('Ha ocurrido un error. Por favor, recarga la página.');
+        });
+        
+        // Service Worker registration for PWA capabilities
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('SW registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+    </script>
+    
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Soluciones Digitales Para Crecer Y Superarte",
+        "description": "Soluciones digitales para crecimiento personal. Cursos, coaching y herramientas transformadoras.",
+        "url": "https://youtu.be/iSWnou8px8A?si=bfXKZODeVIQlPyrf",
+        "logo": "https://naraddigitalgrowth.com/logo.png",
+        "sameAs": [
+            "https://www.facebook.com/share/v/16GKFu382p/",
+            "https://twitter.com/naraddigital",
+            "https://www.instagram.com/desarrollopersonal219?igsh=MXJnNXFpeWxnem4xcw=="
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-555-123-4567",
+            "contactType": "customer service",
+            "email": "info@naraddigital.com"
+        }
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+
