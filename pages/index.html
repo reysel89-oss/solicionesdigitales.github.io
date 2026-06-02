@@ -84,6 +84,11 @@
     
     <!-- Custom Styles for Glassmorphism and Advanced Effects -->
     <style>
+        html, body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
         .glass-morphism {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -190,7 +195,7 @@
                 
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
-                    <button type="button" class="text-white hover:text-primary focus:outline-none focus:text-primary transition-colors duration-200" id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                    <button type="button" class="text-white hover:text-primary focus:outline-none focus:text-primary transition-colors duration-200" id="mobile-menu-button" aria-expanded="false">
                         <span class="sr-only">Abrir menú principal</span>
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -224,17 +229,17 @@
             
             <!-- Social Icons -->
             <div class="fixed left-4 top-1/2 transform -translate-y-1/2 z-40 space-y-4 hidden lg:flex flex-col">
-                <a href="https://www.facebook.com/100091563954274/videos/336733645640835/?rdid=Bg97xqdXcQTi7gcD" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="Facebook">
+                <a href="https://www.facebook.com/100091563954274/videos/336733645640835/?rdid=Bg97xqdXcQTi7gcD" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center group hover:bg-white/30 transition-all duration-300">
                     <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                     </svg>
                 </a>
-                <a href="https://www.youtube.com/watch?v=iSWnou8px8A&ab_channel=MARKETINGDIGITALEVERYONEBUYSANDSELLS" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="Youtube">
+                <a href="https://www.youtube.com/watch?v=iSWnou8px8A&ab_channel=MARKETINGDIGITALEVERYONEBUYSANDSELLS" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center group hover:bg-white/30 transition-all duration-300">
                     <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.08C19.632 3.5 12 3.5 12 3.5s-7.632 0-9.418.606a2.958 2.958 0 0 0-2.08 2.08C0 7.97 0 12 0 12s0 4.03.502 5.814a2.958 2.958 0 0 0 2.08 2.08C4.368 20.5 12 20.5 12 20.5s7.632 0 9.418-.606a2.958 2.958 0 0 0 2.08-2.08C24 16.03 24 12 24 12s0-4.03-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                        <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.08C19.632 3.5 12 3.5 12 3.5s-7.632 0-9.418.606a2.958 2.958 0 0 0-2.08 2.08C0 7.97 0 12 0 12s0 4.03.502 5.814a2.958 2.958 0 0 0 2.08 2.08c1.786.606 9.418.606 9.418.606s7.632 0 9.418-.606a2.958 2.958 0 0 0 2.08-2.08C24 16.03 24 12 24 12s0-4.03-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                     </svg>
                 </a>
-                <a href="https://www.tiktok.com/@desarrollopersona77?is_from_webapp=1&sender_device=pc" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="tiktok">
+                <a href="https://www.tiktok.com/@desarrollopersona77?is_from_webapp=1&sender_device=pc" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center group hover:bg-white/30 transition-all duration-300">
                     <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.465,9.866c-2.139,0-4.122-0.684-5.74-1.846v8.385c0,4.188-3.407,7.594-7.594,7.594c-1.618,0-3.119-0.51-4.352-1.376  
                         c-1.958-1.375-3.242-3.649-3.242-6.218c0-4.188,3.407-7.595,7.595-7.595c0.348,0,0.688,0.029,1.023,0.074v0.977v3.235  
@@ -243,9 +248,9 @@
                         c0.291,1.572,1.224,2.921,2.517,3.764c0.9,0.587,1.974,0.93,3.126,0.93V9.866z"/>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/desarrollopersonal219/?igsh=MXJnNXFpeWxnem4xcw%3D%3D" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300 group" aria-label="Instagram">
+                <a href="https://www.instagram.com/desarrollopersonal219/?igsh=MXJnNXFpeWxnem4xcw%3D%3D" target="_blank" class="w-12 h-12 glass-morphism rounded-full flex items-center justify-center group hover:bg-white/30 transition-all duration-300">
                     <svg class="w-6 h-6 text-white group-hover:text-primary transition-colors duration-300" viewBox="0 0 512 512" fill="currentColor">
-                        <path d="M349.33 69.33H162.67C107.61 69.33 64 112.94 64 168v176c0 55.06 43.61 98.67 98.67 98.67h186.66C404.39 442.67 448 399.06 448 344V168c0-55.06-43.61-98.67-98.67-98.67zM256 346.67c-50.03 0-90.67-40.64-90.67-90.67s40.64-90.67 90.67-90.67 90.67 40.64 90.67 90.67-40.64 90.67-90.67 90.67zm96-170.67a21.33 21.33 0 1 1 21.33-21.33 21.35 21.35 0 0 1-21.33 21.33z"/>
+                        <path d="M349.33 69.33H162.67C107.61 69.33 64 112.94 64 168v176c0 55.06 43.61 98.67 98.67 98.67h186.66C404.39 442.67 448 399.06 448 344V168c0-55.06-43.61-98.67-98.67-98.67z" fill="none" stroke="currentColor" stroke-width="32"/>
                         <circle cx="256" cy="256" r="60"/>
                     </svg>
                 </a>
@@ -271,12 +276,12 @@
                         <!-- CTA Buttons -->
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                             <a href="https://go.hotmart.com/F82153578B?dp=1" target="_blank"> 
-                            <button onclick="scrollToSection('products')" class="group bg-primary hover:bg-primary-dark text-white font-asap font-medium text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                            <button onclick="scrollToSection('products')" class="group bg-primary hover:bg-primary-dark text-white font-asap font-medium text-lg px-8 py-4 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105">
                                 <span class="group-hover:animate-pulse">Tecnología</span>
                             </button>
                             </a>
                             <a href="https://go.hotmart.com/H82153276N?dp=1" target="_blank">
-                            <button onclick="scrollToSection('about')" class="group glass-morphism text-white font-asap font-medium text-lg px-8 py-4 rounded-lg shadow-2xl hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white/50 uppercase tracking-wider">
+                            <button onclick="scrollToSection('about')" class="group glass-morphism text-white font-asap font-medium text-lg px-8 py-4 rounded-lg shadow-2xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                                 <span class="group-hover:animate-pulse">Inversión</span>
                             </button>
                             </a>
@@ -335,10 +340,10 @@
                         </h2>
                         
                         <p class="text-lg md:text-xl font-asap font-light text-text-gray leading-relaxed">
-                            Nuestra tienda digital de crecimiento personal ofrece herramientas, cursos y recursos diseñados para potenciar el desarrollo integral de las personas. A través de productos digitales como ebooks, talleres en línea, guías prácticas y programas de coaching, ayudamos a nuestros usuarios a mejorar su bienestar emocional, mental y espiritual.
+                            Nuestra tienda digital de crecimiento personal ofrece herramientas, cursos y recursos diseñados para potenciar el desarrollo integral de las personas. A través de programas innovadores y contenido transformador, facilitamos el acceso a conocimiento que cambiar vidas.
                         </p>
                         
-                        <button onclick="showModal('aboutModal')" class="group bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-asap font-medium px-8 py-3 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                        <button onclick="showModal('aboutModal')" class="group bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-asap font-medium px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
                             <span class="group-hover:animate-pulse">Sobre Nosotros</span>
                         </button>
                     </div>
@@ -375,7 +380,7 @@
                         </div>
                         <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Misión</h3>
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            Empoderar a las personas a través de herramientas digitales que impulsen su crecimiento personal, emocional y espiritual. Facilitamos el acceso a recursos transformadores que inspiren autoconocimiento, bienestar y una vida con propósito.
+                            Empoderar a las personas a través de herramientas digitales que impulsen su crecimiento personal, emocional y espiritual. Facilitamos el acceso a recursos transformadores.
                         </p>
                     </div>
                     
@@ -388,7 +393,7 @@
                         </div>
                         <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Visión</h3>
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            Ser un referente global en el crecimiento personal digital, creando un espacio accesible donde millones de personas encuentren las herramientas necesarias para transformar su vida y construir una comunidad consciente.
+                            Ser un referente global en el crecimiento personal digital, creando un espacio accesible donde millones de personas encuentren las herramientas necesarias para transformarse.
                         </p>
                     </div>
                     
@@ -400,7 +405,7 @@
                         </div>
                         <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Tecnología</h3>
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            Integra tecnología de forma intuitiva y accesible utilizando plataformas seguras, herramientas digitales avanzadas y experiencias transformadoras que conectan el conocimiento con la comodidad del entorno digital.
+                            Integra tecnología de forma intuitiva y accesible utilizando plataformas seguras, herramientas digitales avanzadas y experiencias transformadoras que conectan el conocimiento.
                         </p>
                     </div>
                 </div>
@@ -444,11 +449,11 @@
                             </h3>
                             
                             <div class="space-y-3 mb-6">
-                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">¿Estamos viviendo los últimos tiempos?¿Qué nos espera en el fin del mundo según la teología católica?</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">¿Estamos viviendo los últimos tiempos?¿Qué nos espera en el fin del mundo según la teología?</p>
                                 <p class="font-asap font-light text-text-gray text-sm leading-relaxed">¿Cuál es el destino final del alma?</p>
                             </div>
                             
-                            <button onclick="learnMore('course1')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                            <button onclick="learnMore('course1')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
                                 <span class="loading-dots">Aprende Más</span>
                             </button>
                         </div>
@@ -471,7 +476,7 @@
                                 <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Conviértete en un buen modelo para su desarrollo integral.</p>
                             </div>
                             
-                            <button onclick="learnMore('course2')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                            <button onclick="learnMore('course2')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
                                 <span class="loading-dots">Aprende Más</span>
                             </button>
                         </div>
@@ -494,7 +499,7 @@
                                 <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Contenido valioso para vivir una vida de plenitud y felicidad.</p>
                             </div>
                             
-                            <button onclick="learnMore('course3')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                            <button onclick="learnMore('course3')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
                                 <span class="loading-dots">Aprende Más</span>
                             </button>
                         </div>
@@ -525,10 +530,10 @@
                         </p>
                         
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            En un mundo perfecto, solo habría sucesos positivos y experimentaríamos solo emociones y pensamientos positivos. A lo largo de este libro electrónico, descubrirás los numerosos y maravillosos beneficios del pensamiento positivo...
+                            En un mundo perfecto, solo habría sucesos positivos y experimentaríamos solo emociones y pensamientos positivos. A lo largo de este libro electrónico, descubrirás estrategias transformadoras.
                         </p>
                         <a href="https://go.hotmart.com/F81988361I?ap=cd14" target="_blank">
-                        <button onclick="investToday()" class="group bg-primary hover:bg-primary-dark text-white font-asap font-medium px-8 py-4 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                        <button onclick="investToday()" class="group bg-primary hover:bg-primary-dark text-white font-asap font-medium px-8 py-4 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105">
                             <span class="group-hover:animate-pulse">Invierte Hoy</span>
                         </button>
                         </a>
@@ -586,7 +591,7 @@
                             Reinvéntate sin perder tu esencia. Aprende a soltar el pasado, rediseñar tu identidad y construir una nueva versión de ti basada en tus valores y aspiraciones más profundas.
                         </p>
                         
-                        <button onclick="exploreServices()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white/50 uppercase tracking-wider">
+                        <button onclick="exploreServices()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105">
                             <span class="group-hover:animate-pulse">Servicios</span>
                         </button>
                     </div>
@@ -598,7 +603,7 @@
                                 <img src="./assets/images/img_image_107x250.png" alt="Renace gallery 1" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
                                 <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <a href="https://www.youtube.com/watch?v=cjq8SVglBHE&ab_channel=AldoCivico" target="_blank">
-                                    <button onclick="playVideo('video1')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 1">
+                                    <button onclick="playVideo('video1')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300">
                                         <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M8 5v14l11-7z"/>
                                         </svg>
@@ -610,7 +615,7 @@
                                 <img src="./assets/images/img_image_1.png" alt="Renace gallery 2" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
                                 <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <a href="https://www.youtube.com/watch?v=5hy2eUhAIbE&ab_channel=GaboPi%C3%B1eros" target="_blank">
-                                    <button onclick="playVideo('video2')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 2">
+                                    <button onclick="playVideo('video2')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300">
                                         <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M8 5v14l11-7z"/>
                                         </svg>
@@ -624,7 +629,7 @@
                                 <img src="./assets/images/img_image_125x257.png" alt="Renace gallery 3" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
                                 <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <a href="https://www.youtube.com/watch?v=j3kUUYZaURI&ab_channel=DanaBek" target="_blank">
-                                    <button onclick="playVideo('video3')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 3">
+                                    <button onclick="playVideo('video3')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300">
                                         <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M8 5v14l11-7z"/>
                                         </svg>
@@ -636,7 +641,7 @@
                                 <img src="./assets/images/img_image_2.png" alt="Renace gallery 4" class="w-full h-auto rounded-2xl shadow-xl group-hover:shadow-2xl transition-shadow duration-300" loading="lazy">
                                 <div class="absolute inset-0 bg-black/40 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <a href="https://www.youtube.com/watch?v=lA8lo9Uj3mo&ab_channel=TransformYourPower" target="_blank">
-                                    <button onclick="playVideo('video4')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-transform duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Play video 4">
+                                    <button onclick="playVideo('video4')" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300">
                                         <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M8 5v14l11-7z"/>
                                         </svg>
@@ -713,7 +718,7 @@
                                     </button>
                                     </a>
                                     <a href="https://www.youtube.com/watch?v=O-lofk-HOf8&t=2s&ab_channel=Blacks.University%C2%AE" target="_blank">
-                                    <button onclick="enrollNow()" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary/50" aria-label="Enroll now">
+                                    <button onclick="enrollNow()" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300">
                                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                                         </svg>
@@ -747,10 +752,10 @@
                         </h2>
                         
                         <p class="text-lg md:text-xl font-asap font-light text-white leading-relaxed">
-                            Diseña tu vida con intención. Este producto digital combina ejercicios de claridad, metas y hábitos para ayudarte a construir un estilo de vida equilibrado, consciente y lleno de propósito.
+                            Diseña tu vida con intención. Este producto digital combina ejercicios de claridad, metas y hábitos para ayudarte a construir un estilo de vida equilibrado, consciente y extraordinario.
                         </p>
                         
-                        <button onclick="contactToday()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-white/50 uppercase tracking-wider">
+                        <button onclick="contactToday()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105">
                             <span class="group-hover:animate-pulse">Contáctanos Hoy</span>
                         </button>
                     </div>
@@ -797,21 +802,21 @@
                         <form class="max-w-lg mx-auto space-y-6" id="contactForm" onsubmit="handleContactForm(event)">
                             <div>
                                 <label for="name" class="sr-only">Nombre completo</label>
-                                <input type="text" id="name" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap">
+                                <input type="text" id="name" name="name" placeholder="Nombre completo" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" aria-label="Nombre completo">
                             </div>
                             <div>
                                 <label for="email" class="sr-only">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap">
+                                <input type="email" id="email" name="email" placeholder="Email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" aria-label="Email">
                             </div>
                             <div>
                                 <label for="phone" class="sr-only">Teléfono</label>
-                                <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap">
+                                <input type="tel" id="phone" name="phone" placeholder="Teléfono (opcional)" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" aria-label="Teléfono">
                             </div>
                             <div>
                                 <label for="message" class="sr-only">Mensaje</label>
-                                <textarea id="message" name="message" rows="4" placeholder="¿En qué te podemos ayudar?" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-colors duration-200 font-asap resize-none"></textarea>
+                                <textarea id="message" name="message" rows="4" placeholder="¿En qué te podemos ayudar?" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300" aria-label="Mensaje"></textarea>
                             </div>
-                            <button onclick="handleContactForm(event)" id="submitButton" type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-4 px-6 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50 uppercase tracking-wider">
+                            <button onclick="handleContactForm(event)" id="submitButton" type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-primary/25">
                                 <span class="loading-dots">Enviar Mensaje</span>
                             </button>
                         </form>
@@ -832,19 +837,19 @@
                         Transformando vidas a través del crecimiento personal digital. Únete a nuestra comunidad y descubre tu verdadero potencial.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="https://www.facebook.com/100091563954274/videos/336733645640835/?rdid=Bg97xqdXcQTi7gcD" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="Facebook">
+                        <a href="https://www.facebook.com/100091563954274/videos/336733645640835/?rdid=Bg97xqdXcQTi7gcD" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=iSWnou8px8A&ab_channel=MARKETINGDIGITALEVERYONEBUYSANDSELLS" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="Youtube">
+                        <a href="https://www.youtube.com/watch?v=iSWnou8px8A&ab_channel=MARKETINGDIGITALEVERYONEBUYSANDSELLS" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
                             <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.08C19.632 3.5 12 3.5 12 3.5s-7.632 0-9.418.606a2.958 2.958 0 0 0-2.08 2.08C0 7.97 0 12 0 12s0 4.03.502 5.814a2.958 2.958 0 0 0 2.08 2.08C4.368 20.5 12 20.5 12 20.5s7.632 0 9.418-.606a2.958 2.958 0 0 0 2.08-2.08C24 16.03 24 12 24 12s0-4.03-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/>
+                                <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.08C19.632 3.5 12 3.5 12 3.5s-7.632 0-9.418.606a2.958 2.958 0 0 0-2.08 2.08C0 7.97 0 12 0 12s0 4.03.502 5.814a2.958 2.958 0 0 0 2.08 2.08c1.786.606 9.418.606 9.418.606s7.632 0 9.418-.606a2.958 2.958 0 0 0 2.08-2.08C24 16.03 24 12 24 12s0-4.03-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                             </svg>
                         </a>
-                        <a href="https://www.instagram.com/desarrollopersonal219/?igsh=MXJnNXFpeWxnem4xcw%3D%3D" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300" aria-label="Instagram">
+                        <a href="https://www.instagram.com/desarrollopersonal219/?igsh=MXJnNXFpeWxnem4xcw%3D%3D" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
                             <svg class="w-6 h-6 text-white group-hover:text-pink-500 transition-colors duration-300" viewBox="0 0 512 512" fill="currentColor">
-                                <path d="M349.33 69.33H162.67C107.61 69.33 64 112.94 64 168v176c0 55.06 43.61 98.67 98.67 98.67h186.66C404.39 442.67 448 399.06 448 344V168c0-55.06-43.61-98.67-98.67-98.67zM256 346.67c-50.03 0-90.67-40.64-90.67-90.67s40.64-90.67 90.67-90.67 90.67 40.64 90.67 90.67-40.64 90.67-90.67 90.67zm96-170.67a21.33 21.33 0 1 1 21.33-21.33 21.35 21.35 0 0 1-21.33 21.33z"/>
+                                <path d="M349.33 69.33H162.67C107.61 69.33 64 112.94 64 168v176c0 55.06 43.61 98.67 98.67 98.67h186.66C404.39 442.67 448 399.06 448 344V168c0-55.06-43.61-98.67-98.67-98.67z" fill="none" stroke="currentColor" stroke-width="32"/>
                                 <circle cx="256" cy="256" r="60"/>
                             </svg>
                         </a>
@@ -886,7 +891,7 @@
             <div class="p-8">
                 <div class="flex items-center justify-between mb-6">
                     <h2 id="aboutModalTitle" class="text-2xl font-oxygen font-bold text-primary">Sobre Nosotros</h2>
-                    <button onclick="closeModal('aboutModal')" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2" aria-label="Cerrar modal">
+                    <button onclick="closeModal('aboutModal')" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
@@ -895,11 +900,11 @@
                 
                 <div class="space-y-6 font-asap text-text-gray leading-relaxed">
                     <p>
-                        En Soluciones Digitales para Crecer y Superarte, creemos que cada persona tiene un potencial ilimitado esperando ser descubierto. Nuestra misión es proporcionar las herramientas digitales más efectivas para el crecimiento personal y profesional.
+                        En Soluciones Digitales para Crecer y Superarte, creemos que cada persona tiene un potencial ilimitado esperando ser descubierto. Nuestra misión es proporcionar las herramientas y recursos necesarios para transformar vidas a través de la educación digital personalizada.
                     </p>
                     
                     <p>
-                        Nuestro equipo está compuesto por expertos en psicología, coaching, tecnología y desarrollo personal que trabajan juntos para crear experiencias transformadoras que realmente marquen la diferencia en la vida de las personas.
+                        Nuestro equipo está compuesto por expertos en psicología, coaching, tecnología y desarrollo personal que trabajan juntos para crear experiencias transformadoras que realmente funcionan.
                     </p>
                     
                     <p>
@@ -915,7 +920,7 @@
             <div class="p-8">
                 <div class="flex items-center justify-between mb-6">
                     <h2 id="courseModalTitle" class="text-2xl font-oxygen font-bold text-primary">Información del Curso</h2>
-                    <button onclick="closeModal('courseModal')" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2" aria-label="Cerrar modal">
+                    <button onclick="closeModal('courseModal')" class="text-gray-400 hover:text-gray-600 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded-full p-2">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
@@ -925,10 +930,10 @@
                     <p>Descubre todos los detalles de nuestros cursos de crecimiento personal diseñados para transformar tu vida.</p>
                 </div>
                 <div class="mt-8 flex flex-col sm:flex-row gap-4">
-                    <button id="btnInscribirse" onclick="enrollNow('courseContent')" class="flex-1 bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-primary/50">
+                    <button id="btnInscribirse" onclick="enrollNow('courseContent')" class="flex-1 bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
                         Inscribirse Ahora
                     </button>
-                    <button onclick="closeModal('courseModal')" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-gray-500/50">
+                    <button onclick="closeModal('courseModal')" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
                         Cerrar
                     </button>
                 </div>
@@ -997,12 +1002,6 @@
                 modal.classList.add('flex');
                 modal.setAttribute('aria-hidden', 'false');
                 document.body.style.overflow = 'hidden';
-                
-                // Focus first focusable element
-                const focusableElements = modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
-                if (focusableElements.length > 0) {
-                    focusableElements[0].focus();
-                }
             }
         }
         
@@ -1012,161 +1011,102 @@
                 modal.classList.add('hidden');
                 modal.classList.remove('flex');
                 modal.setAttribute('aria-hidden', 'true');
-                document.body.style.overflow = '';
+                document.body.style.overflow = 'auto';
             }
         }
         
-        // Course interaction
+        // Close modal when clicking outside
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    closeModal(modal.id);
+                }
+            });
+        });
+        
+        // Contact form handling
+        function handleContactForm(event) {
+            event.preventDefault();
+            const form = document.getElementById('contactForm');
+            const submitButton = document.getElementById('submitButton');
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            const successMessage = document.getElementById('successMessageTemplate');
+            const successText = document.getElementById('successMessageText');
+            
+            // Show loading overlay
+            loadingOverlay.classList.remove('hidden');
+            loadingOverlay.classList.add('flex');
+            submitButton.disabled = true;
+            
+            // Get form data
+            const formData = new FormData(form);
+            
+            // Simulate sending (replace with actual API call if needed)
+            setTimeout(() => {
+                // Hide loading
+                loadingOverlay.classList.add('hidden');
+                loadingOverlay.classList.remove('flex');
+                
+                // Show success message
+                successMessage.classList.remove('hidden');
+                successMessage.style.transform = 'translateX(0)';
+                
+                // Reset form
+                form.reset();
+                submitButton.disabled = false;
+                
+                // Hide success message after 3 seconds
+                setTimeout(() => {
+                    successMessage.style.transform = 'translateX(400px)';
+                    setTimeout(() => {
+                        successMessage.classList.add('hidden');
+                    }, 300);
+                }, 3000);
+            }, 1500);
+        }
+        
+        // Placeholder functions for buttons
         function learnMore(courseId) {
-           
-            const courseContent = document.getElementById('courseContent');
-            let content = '';
-            let link = "";
-           
-            
-        
-            switch(courseId) {
-                case 'course1':
-                    content = `
-                        <h3 class="text-xl font-oxygen font-bold text-primary mb-4">El fin del mundo y los misterios de la vida futura</h3>
-                        <p>¿Qué encontrarás en este libro?</p>
-                        <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li>Profecías sobre el fin de los tiempos y el juicio final</li>
-                            <li>El destino del alma: cielo, purgatorio o infierno</li>
-                            <li>La segunda venida de Cristo y la resurrección de los muertos</li>
-                            <li>Explicaciones basadas en la teología católica sobre el Apocalipsis y la gran tribulación</li>
-                            <li> Un análisis profundo sobre la salvación y la condenación eterna</li>
-                        </ul>
-                        <p> 280 páginas de sabiduría y enseñanza espiritual que responden con claridad y contundencia a las preguntas más inquietantes sobre el futuro de la humanidad y el destino final de cada alma </p>
-                    `;
-                     link = "https://go.hotmart.com/X106074403I?dp=1";
-                    break;
-                case 'course2':
-                    content = `
-                        <h3 class="text-xl font-oxygen font-bold text-primary mb-4">Inteligencia Emocional para Educadores</h3>
-                        <p>Desarrolla las habilidades necesarias para:</p>
-                        <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li>Comprender y gestionar tus propias emociones</li>
-                            <li>Ayudar a los niños a desarrollar inteligencia emocional</li>
-                            <li>Crear ambientes de aprendizaje emocionalmente seguros</li>
-                            <li>Manejar situaciones difíciles con calma y sabiduría</li>
-                            <li>Ser un modelo positivo de regulación emocional</li>
-                        </ul>
-                        <p class="mt-4"><strong>Duración:</strong> 6 semanas | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Material descargable y certificación</p>
-                    `;
-                     link = "https://go.hotmart.com/N81969297W";
-                    break;
-                case 'course3':
-                    content = `
-                        <h3 class="text-xl font-oxygen font-bold text-primary mb-4">Abre tu Conciencia para ser Feliz</h3>
-                        <p>47 videos tutoriales que te enseñan:</p>
-                        <ul class="list-disc list-inside space-y-2 ml-4">
-                            <li>Técnicas de mindfulness y meditación</li>
-                            <li>Cómo liberarte de patrones limitantes</li>
-                            <li>Desarrollar una mentalidad de abundancia</li>
-                            <li>Encontrar tu propósito de vida</li>
-                            <li>Vivir en el presente con plenitud</li>
-                        </ul>
-                        <p class="mt-4"><strong>Duración:</strong> A tu ritmo | <strong>Modalidad:</strong> Online | <strong>Incluye:</strong> Acceso de por vida</p>
-                    `;
-                     link = "https://go.hotmart.com/F82002329S?dp=1";
-                    break;
-                default:
-                    content = '<p>Información del curso no disponible.</p>';
-            }
-
-            courseContent.innerHTML = content;
-
-            // asignar link al botón
-            document.getElementById("btnInscribirse").onclick = function() {
-                window.open(link, "_blank"); // abre en nueva pestaña 
-                 };
-
-
             showModal('courseModal');
-
-            
-        }
-
-        
-        // Video player
-        function playVideo(videoId) {
-            showLoadingOverlay();
-            
-            // Simulate video loading
-            setTimeout(() => {
-                hideLoadingOverlay();
-                showSuccessMessage(`Reproduciendo video: ${videoId}`);
-            }, 1500);
         }
         
-        // Investment action
         function investToday() {
-            showLoadingOverlay();
-            
-            // Simulate navigation
-            setTimeout(() => {
-                hideLoadingOverlay();
-                showSuccessMessage('Redirigiendo a la página de inversión...');
-            }, 1000);
+            scrollToSection('products');
         }
         
-        // Services exploration
         function exploreServices() {
-            scrollToSection('contact');
-            showSuccessMessage('¡Contáctanos para conocer todos nuestros servicios!');
+            scrollToSection('services');
         }
         
-        // Enrollment
-        function enrollNow() {
-            showLoadingOverlay();
-
-            // Simulate enrollment process
-             setTimeout(() => {
-                hideLoadingOverlay();
-                showSuccessMessage('¡Iniciando proceso de inscripción!');
-            }, 1500);
-        }
-       // Redirect to course URL
-        function redirectToCourse() {
-            const courseId = getCourseId();
-            let url = '';
-            switch(courseId) {
-                case 'course1':
-                    url = 'https://go.hotmart.com/X81967713F';
-                    break;
-                case 'course2':
-                    url = 'https://go.hotmart.com/N81969297W';
-                    break;
-                case 'course3':
-                    url = 'https://go.hotmart.com/F82002329S';
-                    break;
-                default:
-                    url = 'https://go.hotmart.com/Q81967476Y?ap=1444';
-            }
-            window.open(url, '_blank');
-        }
-
-        // Contact
         function contactToday() {
             scrollToSection('contact');
+        }
+        
+        function enrollNow() {
+            window.location.href = '#products';
+        }
+        
+        function playVideo(videoId) {
+            console.log('Playing video:', videoId);
         }
         
         // Counter animation
         function animateCounters() {
             const counters = document.querySelectorAll('.counter');
+            
             counters.forEach(counter => {
                 const target = parseFloat(counter.getAttribute('data-target'));
-                const increment = target / 100;
+                const duration = 2000; // 2 seconds
+                const increment = target / (duration / 16); // 60fps
                 let current = 0;
                 
                 const updateCounter = () => {
+                    current += increment;
                     if (current < target) {
-                        current += increment;
-                        counter.textContent = current.toFixed(1);
-                        setTimeout(updateCounter, 20);
+                        counter.textContent = current.toFixed(1).replace('.0', '');
+                        requestAnimationFrame(updateCounter);
                     } else {
-                        counter.textContent = target.toString();
+                        counter.textContent = Math.round(target);
                     }
                 };
                 
@@ -1174,310 +1114,9 @@
             });
         }
         
-        // Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    
-                    // Trigger counter animation for elements with counters
-                    if (entry.target.querySelector('.counter')) {
-                        animateCounters();
-                    }
-                }
-            });
-        }, observerOptions);
-        
-        // Loading overlay functions
-        function showLoadingOverlay() {
-            const overlay = document.getElementById('loadingOverlay');
-            overlay.classList.remove('hidden');
-            overlay.classList.add('flex');
-        }
-        
-        function hideLoadingOverlay() {
-            const overlay = document.getElementById('loadingOverlay');
-            overlay.classList.add('hidden');
-            overlay.classList.remove('flex');
-        }
-        
-        // Success message function
-        function showSuccessMessage(message) {
-            const template = document.getElementById('successMessageTemplate');
-            const messageText = document.getElementById('successMessageText');
-            
-            messageText.textContent = message;
-            template.classList.remove('hidden', 'translate-x-full');
-            template.classList.add('translate-x-0');
-            
-            setTimeout(() => {
-                template.classList.add('translate-x-full');
-                template.classList.remove('translate-x-0');
-                
-                setTimeout(() => {
-                    template.classList.add('hidden');
-                }, 300);
-            }, 3000);
-        }
-        
-        // Form handling
-        function handleContactForm(event) {
-            event.preventDefault();
-            
-           const formData = new FormData(event.target);
-            const data = {
-                name: formData.get('name'),
-                email: formData.get('email'),
-                phone: formData.get('phone'),
-                message: formData.get('message')
-
-
-            };
-            
-            // Validate form
-            const errors = validateForm(data);
-            if (errors.length > 0) {
-                alert('Por favor corrige los siguientes errores:\n' + errors.join('\n'));
-                return;
-            }
-            
-            showLoadingOverlay();
-            
-            //  form submission
-            setTimeout(() => {
-                hideLoadingOverlay();
-                showSuccessMessage('¡Mensaje enviado exitosamente! Te contactaremos pronto.');
-                event.target.reset();
-            }, 2000);
-        }
-        
-        // Form validation
-        function validateForm(formData) {
-            const errors = [];
-            
-            if (!formData.name || formData.name.length < 2) {
-                errors.push('El nombre debe tener al menos 2 caracteres');
-            }
-            
-            if (!formData.email || !formData.email.includes('@')) {
-                errors.push('Email válido es requerido');
-            }
-            
-            if (!formData.message || formData.message.length < 10) {
-                errors.push('El mensaje debe tener al menos 10 caracteres');
-            }
-            
-            return errors;
-        }
-        
-        // Initialize page
-        document.addEventListener('DOMContentLoaded', () => {
-            // Observe animated elements
-            const animatedElements = document.querySelectorAll('.animate-fade-in, .animate-slide-up');
-            animatedElements.forEach(element => {
-                observer.observe(element);
-            });
-            
-            // Observe counter elements
-            const counterContainers = document.querySelectorAll('[class*="counter"]');
-            counterContainers.forEach(container => {
-                observer.observe(container.closest('section') || container);
-            });
-            
-            // Close modals on outside click
-            window.addEventListener('click', (event) => {
-                const modals = document.querySelectorAll('.modal');
-                modals.forEach(modal => {
-                    if (event.target === modal) {
-                        closeModal(modal.id);
-                    }
-                });
-            });
-            
-            // Keyboard navigation
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape') {
-                    const openModals = document.querySelectorAll('.modal:not(.hidden)');
-                    openModals.forEach(modal => {
-                        closeModal(modal.id);
-                    });
-                }
-            });
-            
-            // Smooth scroll for navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href').substring(1);
-                    scrollToSection(targetId);
-                    
-                    // Close mobile menu if open
-                    mobileMenu.classList.add('hidden');
-                    mobileMenuButton.setAttribute('aria-expanded', 'false');
-                });
-            });
-            
-            // Add loading states to buttons
-            document.querySelectorAll('button').forEach(button => {
-                button.addEventListener('click', function() {
-                    if (!this.disabled && !this.classList.contains('loading')) {
-                        this.classList.add('loading');
-                        this.disabled = true;
-                        
-                        setTimeout(() => {
-                            this.classList.remove('loading');
-                            this.disabled = false;
-                        }, 2000);
-                    }
-                });
-            });
-        });
-        
-        // Performance optimizations
-        
-        // Lazy loading for images
-        if ('loading' in HTMLImageElement.prototype) {
-            const images = document.querySelectorAll('img[loading="lazy"]');
-            images.forEach(img => {
-                img.src = img.src;
-            });
-        } else {
-            // Fallback for browsers that don't support lazy loading
-            const script = document.createElement('script');
-            script.src = 'https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver';
-            document.head.appendChild(script);
-        }
-        
-        // Preload critical images
-        const criticalImages = [
-            './assets/images/img_pexelspaveldanilyuk7120911jpg.png',
-            './assets/images/img_026091343039af391c044e1932185ce1.png',
-            './assets/images/img_caratulahotmart.png'
-        ];
-        
-        criticalImages.forEach(src => {
-            const link = document.createElement('link');
-            link.rel = 'preload';
-            link.as = 'image';
-            link.href = src;
-            document.head.appendChild(link);
-        });
-        
-        // Error handling
-        window.addEventListener('error', (event) => {
-            console.error('Error occurred:', event.error);
-            showSuccessMessage('Ha ocurrido un error. Por favor, recarga la página.');
-        });
-        
-     document.addEventListener('DOMContentLoaded', () => {
-
-        // Observar elementos animados
-        const animatedElements = document.querySelectorAll('.animate-fade-in');
-
-        animatedElements.forEach(el => {
-            observer.observe(el);
-        });
-
-    });
-
-   
+        // Trigger animation when page loads
+        window.addEventListener('load', animateCounters);
     </script>
     
-    <!-- Schema.org structured data for SEO -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Soluciones Digitales Para Crecer Y Superarte",
-        "description": "Soluciones digitales para crecimiento personal. Cursos, coaching y herramientas transformadoras.",
-        "url": "https://youtu.be/iSWnou8px8A?si=bfXKZODeVIQlPyrf",
-        "logo": "https://naraddigitalgrowth.com/logo.png",
-        "sameAs": [
-            "https://www.facebook.com/share/v/16GKFu382p/",
-            "https://twitter.com/naraddigital",
-            "https://www.instagram.com/desarrollopersonal219?igsh=MXJnNXFpeWxnem4xcw=="
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+1-555-123-4567",
-            "contactType": "customer service",
-            "email": "info@naraddigital.com"
-        }
-    }
-    
-    </script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
-<script>
-
-emailjs.init({
-    publicKey: "5myRbr3Gqe9o3D89J",
-});
-
-function handleContactForm(event) {
-
-    event.preventDefault();
-
-    const form = document.getElementById("contactForm");
-
-    const button = document.getElementById("submitButton");
-
-    const originalText = button.innerHTML;
-
-    button.innerHTML = "ENVIANDO...";
-    button.disabled = true;
-
-    emailjs.sendForm(
-        "service_5rs0qmu",
-        "template_9119y1e",
-        form
-    )
-    .then(() => {
-
-        alert("Mensaje enviado correctamente ✅");
-
-        form.reset();
-
-    })
-    .catch((error) => {
-
-        console.error("EMAILJS ERROR:", error);
-
-        alert(
-            "Error: " +
-            JSON.stringify(error)
-        );
-
-    })
-    .finally(() => {
-
-        button.innerHTML = originalText;
-        button.disabled = false;
-
-    });
-
-}
-
-</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
