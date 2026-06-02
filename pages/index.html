@@ -84,9 +84,24 @@
     
     <!-- Custom Styles for Glassmorphism and Advanced Effects -->
     <style>
-        html, body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
             width: 100%;
+            height: 100%;
             overflow-x: hidden;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
         }
 
         .glass-morphism {
@@ -218,9 +233,9 @@
     </nav>
     
     <!-- Main Content -->
-    <main id="main-content" class="relative">
+    <main id="main-content" class="relative w-full">
         <!-- Hero Section -->
-        <section id="inicio" class="relative min-h-screen bg-gradient-to-br from-accent via-green-700 to-green-900 flex items-center justify-center overflow-hidden">
+        <section id="inicio" class="relative min-h-screen bg-gradient-to-br from-accent via-green-700 to-green-900 flex items-center justify-center overflow-hidden w-full">
             <!-- Animated Background Elements -->
             <div class="absolute inset-0 overflow-hidden">
                 <div class="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-primary/20 to-transparent rounded-full animate-float" style="animation-delay: 0s;"></div>
@@ -256,7 +271,7 @@
                 </a>
             </div>
             
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-30">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-30 w-full">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
                     <!-- Hero Content -->
                     <div class="text-center lg:text-left space-y-8 animate-fade-in">
@@ -323,7 +338,7 @@
         </section>
         
         <!-- About Section -->
-        <section id="about" class="py-20 lg:py-32 bg-white relative overflow-hidden">
+        <section id="about" class="py-20 lg:py-32 bg-white relative overflow-hidden w-full">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
                     <!-- Content -->
@@ -340,7 +355,7 @@
                         </h2>
                         
                         <p class="text-lg md:text-xl font-asap font-light text-text-gray leading-relaxed">
-                            Nuestra tienda digital de crecimiento personal ofrece herramientas, cursos y recursos diseñados para potenciar el desarrollo integral de las personas. A través de programas innovadores y contenido transformador, facilitamos el acceso a conocimiento que cambiar vidas.
+                            Nuestra tienda digital de crecimiento personal ofrece herramientas, cursos y recursos diseñados para potenciar el desarrollo integral de las personas. A través de programas innovadores, facilitamos el acceso a conocimiento que cambia vidas.
                         </p>
                         
                         <button onclick="showModal('aboutModal')" class="group bg-white border-2 border-primary text-primary hover:bg-primary hover:text-white font-asap font-medium px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -380,7 +395,7 @@
                         </div>
                         <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Misión</h3>
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            Empoderar a las personas a través de herramientas digitales que impulsen su crecimiento personal, emocional y espiritual. Facilitamos el acceso a recursos transformadores.
+                            Empoderar a las personas a través de herramientas digitales que impulsen su crecimiento personal, emocional y espiritual.
                         </p>
                     </div>
                     
@@ -393,7 +408,7 @@
                         </div>
                         <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Visión</h3>
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            Ser un referente global en el crecimiento personal digital, creando un espacio accesible donde millones de personas encuentren las herramientas necesarias para transformarse.
+                            Ser un referente global en el crecimiento personal digital, creando un espacio accesible para millones.
                         </p>
                     </div>
                     
@@ -405,7 +420,7 @@
                         </div>
                         <h3 class="text-2xl font-oxygen font-bold text-primary mb-6">Tecnología</h3>
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            Integra tecnología de forma intuitiva y accesible utilizando plataformas seguras, herramientas digitales avanzadas y experiencias transformadoras que conectan el conocimiento.
+                            Integra tecnología de forma intuitiva utilizando plataformas seguras y avanzadas.
                         </p>
                     </div>
                 </div>
@@ -413,7 +428,7 @@
         </section>
         
         <!-- Products Section -->
-        <section id="products" class="py-20 lg:py-32 bg-gradient-to-br from-blue-500/80 via-primary/80 to-secondary/80 relative overflow-hidden">
+        <section id="products" class="py-20 lg:py-32 bg-gradient-to-br from-blue-500/80 via-primary/80 to-secondary/80 relative overflow-hidden w-full">
             <!-- Background Elements -->
             <div class="absolute inset-0">
                 <div class="absolute top-0 left-0 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-float" style="animation-delay: 0s;"></div>
@@ -449,7 +464,7 @@
                             </h3>
                             
                             <div class="space-y-3 mb-6">
-                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">¿Estamos viviendo los últimos tiempos?¿Qué nos espera en el fin del mundo según la teología?</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">¿Estamos viviendo los últimos tiempos?</p>
                                 <p class="font-asap font-light text-text-gray text-sm leading-relaxed">¿Cuál es el destino final del alma?</p>
                             </div>
                             
@@ -468,12 +483,12 @@
                         
                         <div class="p-8">
                             <h3 class="text-xl font-oxygen font-bold text-primary mb-4 line-clamp-2">
-                                Desarrolla tu Inteligencia Emocional para educar niños emocionalmente sanos
+                                Desarrolla tu Inteligencia Emocional
                             </h3>
                             
                             <div class="space-y-3 mb-6">
-                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Responde a la necesidad de preparación para educar niños con todas sus potencialidades.</p>
-                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Conviértete en un buen modelo para su desarrollo integral.</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Aprende a educar niños emocionalmente sanos.</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Conviértete en un buen modelo.</p>
                             </div>
                             
                             <button onclick="learnMore('course2')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -491,12 +506,12 @@
                         
                         <div class="p-8">
                             <h3 class="text-xl font-oxygen font-bold text-primary mb-4 line-clamp-2">
-                                "Abre tu Conciencia para ser Feliz" - El Conocimiento que te devolverá tu Poder
+                                Abre tu Conciencia para ser Feliz
                             </h3>
                             
                             <div class="space-y-3 mb-6">
-                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">47 Videos tutoriales para aprender a ser feliz. Despertar es ver con más claridad.</p>
-                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Contenido valioso para vivir una vida de plenitud y felicidad.</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">47 Videos tutoriales para aprender a ser feliz.</p>
+                                <p class="font-asap font-light text-text-gray text-sm leading-relaxed">Contenido valioso para vivir en plenitud.</p>
                             </div>
                             
                             <button onclick="learnMore('course3')" class="w-full bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -509,7 +524,7 @@
         </section>
         
         <!-- Strategy Section -->
-        <section class="py-20 lg:py-32 bg-white relative overflow-hidden">
+        <section class="py-20 lg:py-32 bg-white relative overflow-hidden w-full">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
                     <!-- Content -->
@@ -526,11 +541,11 @@
                         </h2>
                         
                         <p class="text-lg font-asap text-primary mb-4">
-                            Este e-book está creado para aquellos individuos que quieran conocer sobre el pensamiento positivo.
+                            Este e-book está creado para aquellos que quieran conocer sobre el pensamiento positivo.
                         </p>
                         
                         <p class="font-asap font-light text-text-gray leading-relaxed">
-                            En un mundo perfecto, solo habría sucesos positivos y experimentaríamos solo emociones y pensamientos positivos. A lo largo de este libro electrónico, descubrirás estrategias transformadoras.
+                            Descubre estrategias transformadoras para tu vida.
                         </p>
                         <a href="https://go.hotmart.com/F81988361I?ap=cd14" target="_blank">
                         <button onclick="investToday()" class="group bg-primary hover:bg-primary-dark text-white font-asap font-medium px-8 py-4 rounded-lg shadow-2xl hover:shadow-primary/25 transition-all duration-300 transform hover:scale-105">
@@ -550,7 +565,7 @@
                                     <img src="./assets/images/img_symbolefemininiconenoirepng.png" alt="Eugenia avatar" class="w-12 h-12 rounded-full" loading="lazy">
                                     <div>
                                         <p class="font-nunito text-gray-800 text-sm mb-2 leading-relaxed">
-                                            "Super libro me ayudó mucho a pensar mejor sobre mi actitud y positividad"
+                                            "Super libro me ayudó mucho a pensar mejor"
                                         </p>
                                         <div>
                                             <h4 class="font-nunito font-bold text-xs text-gray-500 uppercase tracking-wider">EUGENIA</h4>
@@ -566,7 +581,7 @@
         </section>
         
         <!-- Renace Section -->
-        <section id="services" class="py-20 lg:py-32 relative overflow-hidden">
+        <section id="services" class="py-20 lg:py-32 relative overflow-hidden w-full">
             <!-- Background Image with Overlay -->
             <div class="absolute inset-0">
                 <img src="./assets/images/img_image.png" alt="Background" class="w-full h-full object-cover" loading="lazy">
@@ -588,7 +603,7 @@
                         </h2>
                         
                         <p class="text-lg md:text-xl font-asap font-light text-white leading-relaxed">
-                            Reinvéntate sin perder tu esencia. Aprende a soltar el pasado, rediseñar tu identidad y construir una nueva versión de ti basada en tus valores y aspiraciones más profundas.
+                            Reinvéntate sin perder tu esencia.
                         </p>
                         
                         <button onclick="exploreServices()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -656,7 +671,7 @@
         </section>
         
         <!-- Financial Education Section -->
-        <section class="py-20 lg:py-32 bg-white relative overflow-hidden">
+        <section class="py-20 lg:py-32 bg-white relative overflow-hidden w-full">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-16 items-center">
                     <!-- Content -->
@@ -667,8 +682,7 @@
                         </div>
                         
                         <h2 class="text-3xl md:text-4xl lg:text-5xl font-oxygen font-bold text-primary leading-tight">
-                            Capitaliza tu Pasión para<br>
-                            <span class="gradient-text">Adolescentes</span>
+                            Capitaliza tu Pasión
                         </h2>
                         
                         <p class="font-asap text-text-gray leading-relaxed">
@@ -693,7 +707,7 @@
                                 <div class="text-3xl lg:text-4xl font-oxygen font-bold text-primary mb-2">
                                     +<span class="counter" data-target="78.2">0</span>%
                                 </div>
-                                <p class="text-sm font-asap text-primary">energías limpias</p>
+                                <p class="text-sm font-asap text-primary">energías</p>
                             </div>
                         </div>
                     </div>
@@ -708,17 +722,17 @@
                             </div>
                             
                             <div class="relative z-10 h-96 flex flex-col justify-end">
-                                <div class="flex items-end justify-between">
+                                <div class="flex items-end justify-between gap-4">
                                     <a href="https://go.hotmart.com/Q81967476Y?ap=1444" target="_blank">
                                     <button onclick="enrollNow()" class="group glass-card rounded-2xl p-6 hover-lift transition-all duration-300 max-w-xs">
                                         <div class="w-1 h-4 bg-primary mb-4"></div>
                                         <p class="text-lg font-asap font-light text-gray-800 leading-tight">
-                                            Inscríbete ya y comienza hoy
+                                            Inscríbete ya
                                         </p>
                                     </button>
                                     </a>
                                     <a href="https://www.youtube.com/watch?v=O-lofk-HOf8&t=2s&ab_channel=Blacks.University%C2%AE" target="_blank">
-                                    <button onclick="enrollNow()" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300">
+                                    <button onclick="enrollNow()" class="w-16 h-16 bg-primary hover:bg-primary-dark rounded-full flex items-center justify-center transform hover:scale-110 transition-all duration-300 flex-shrink-0">
                                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
                                         </svg>
@@ -733,7 +747,7 @@
         </section>
         
         <!-- Experience Section -->
-        <section class="py-20 lg:py-32 bg-cover bg-center bg-fixed relative overflow-hidden parallax" style="background-image: url('./assets/images/img_imagebackground.png')">
+        <section class="py-20 lg:py-32 bg-cover bg-center bg-fixed relative overflow-hidden parallax w-full" style="background-image: url('./assets/images/img_imagebackground.png')">
             <!-- Overlay -->
             <div class="absolute inset-0 bg-black/60"></div>
             
@@ -752,7 +766,7 @@
                         </h2>
                         
                         <p class="text-lg md:text-xl font-asap font-light text-white leading-relaxed">
-                            Diseña tu vida con intención. Este producto digital combina ejercicios de claridad, metas y hábitos para ayudarte a construir un estilo de vida equilibrado, consciente y extraordinario.
+                            Diseña tu vida con intención.
                         </p>
                         
                         <button onclick="contactToday()" class="group glass-morphism text-white hover:bg-white/20 font-asap font-medium px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -781,7 +795,7 @@
         </section>
         
         <!-- Contact Section -->
-        <section id="contact" class="py-20 lg:py-32 bg-gray-50 relative overflow-hidden">
+        <section id="contact" class="py-20 lg:py-32 bg-gray-50 relative overflow-hidden w-full">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
                     <div class="space-y-8 animate-fade-in">
@@ -795,7 +809,7 @@
                         </h2>
                         
                         <p class="text-lg md:text-xl font-asap font-light text-text-gray leading-relaxed max-w-2xl mx-auto">
-                            Únete a miles de personas que ya han comenzado su viaje de transformación personal. El momento perfecto para empezar es ahora.
+                            Únete a miles de personas que ya han comenzado su viaje de transformación.
                         </p>
                         
                         <!-- Contact Form -->
@@ -828,13 +842,13 @@
     
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-gray-900 text-white py-12 w-full">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8">
                 <div class="col-span-2">
                     <h3 class="text-2xl font-oxygen font-bold mb-4">Soluciones Digitales para Crecer y Superarte</h3>
                     <p class="font-asap text-gray-300 leading-relaxed mb-6">
-                        Transformando vidas a través del crecimiento personal digital. Únete a nuestra comunidad y descubre tu verdadero potencial.
+                        Transformando vidas a través del crecimiento personal digital.
                     </p>
                     <div class="flex space-x-4">
                         <a href="https://www.facebook.com/100091563954274/videos/336733645640835/?rdid=Bg97xqdXcQTi7gcD" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
@@ -843,12 +857,12 @@
                             </svg>
                         </a>
                         <a href="https://www.youtube.com/watch?v=iSWnou8px8A&ab_channel=MARKETINGDIGITALEVERYONEBUYSANDSELLS" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                            <svg class="w-5 h-5 text-white group-hover:text-primary transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
                                 <path d="M23.498 6.186a2.958 2.958 0 0 0-2.08-2.08C19.632 3.5 12 3.5 12 3.5s-7.632 0-9.418.606a2.958 2.958 0 0 0-2.08 2.08C0 7.97 0 12 0 12s0 4.03.502 5.814a2.958 2.958 0 0 0 2.08 2.08c1.786.606 9.418.606 9.418.606s7.632 0 9.418-.606a2.958 2.958 0 0 0 2.08-2.08C24 16.03 24 12 24 12s0-4.03-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                             </svg>
                         </a>
                         <a href="https://www.instagram.com/desarrollopersonal219/?igsh=MXJnNXFpeWxnem4xcw%3D%3D" target="_blank" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors duration-300">
-                            <svg class="w-6 h-6 text-white group-hover:text-pink-500 transition-colors duration-300" viewBox="0 0 512 512" fill="currentColor">
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 512 512">
                                 <path d="M349.33 69.33H162.67C107.61 69.33 64 112.94 64 168v176c0 55.06 43.61 98.67 98.67 98.67h186.66C404.39 442.67 448 399.06 448 344V168c0-55.06-43.61-98.67-98.67-98.67z" fill="none" stroke="currentColor" stroke-width="32"/>
                                 <circle cx="256" cy="256" r="60"/>
                             </svg>
@@ -870,7 +884,7 @@
                 <div>
                     <h4 class="text-lg font-oxygen font-bold mb-4">Contacto</h4>
                     <div class="space-y-2 font-asap text-gray-300">
-                        <p>Email:marketingdigitaleveryonebun@gmail.com</p>
+                        <p>Email: contacto@soluciones.com</p>
                         <p>Teléfono: +57 (320) 53-99771</p>
                         <p>Horario: Lun-Vie 9:00-18:00</p>
                     </div>
@@ -879,7 +893,7 @@
             
             <div class="border-t border-gray-700 mt-12 pt-8 text-center">
                 <p class="font-roboto text-gray-400">
-                    © 2024 Soluciones Digitales para Crecer y Superarte. Todos los derechos reservados.
+                    © 2024 Soluciones Digitales. Todos los derechos reservados.
                 </p>
             </div>
         </div>
@@ -900,15 +914,15 @@
                 
                 <div class="space-y-6 font-asap text-text-gray leading-relaxed">
                     <p>
-                        En Soluciones Digitales para Crecer y Superarte, creemos que cada persona tiene un potencial ilimitado esperando ser descubierto. Nuestra misión es proporcionar las herramientas y recursos necesarios para transformar vidas a través de la educación digital personalizada.
+                        Creemos que cada persona tiene un potencial ilimitado esperando ser descubierto.
                     </p>
                     
                     <p>
-                        Nuestro equipo está compuesto por expertos en psicología, coaching, tecnología y desarrollo personal que trabajan juntos para crear experiencias transformadoras que realmente funcionan.
+                        Nuestro equipo está compuesto por expertos en psicología, coaching, tecnología y desarrollo personal.
                     </p>
                     
                     <p>
-                        Utilizamos las últimas tecnologías y metodologías probadas para ofrecer cursos, talleres y herramientas que se adapten a tu ritmo de vida y necesidades específicas.
+                        Utilizamos las últimas tecnologías para ofrecer cursos y herramientas transformadoras.
                     </p>
                 </div>
             </div>
@@ -927,7 +941,7 @@
                     </button>
                 </div>
                 <div class="space-y-6 font-asap text-text-gray leading-relaxed" id="courseContent">
-                    <p>Descubre todos los detalles de nuestros cursos de crecimiento personal diseñados para transformar tu vida.</p>
+                    <p>Descubre todos los detalles de nuestros cursos de crecimiento personal.</p>
                 </div>
                 <div class="mt-8 flex flex-col sm:flex-row gap-4">
                     <button id="btnInscribirse" onclick="enrollNow('courseContent')" class="flex-1 bg-primary hover:bg-primary-dark text-white font-asap font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105">
@@ -955,7 +969,7 @@
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
             </svg>
-            <span class="font-asap font-medium" id="successMessageText">¡Mensaje enviado exitosamente!</span>
+            <span class="font-asap font-medium" id="successMessageText">¡Enviado exitosamente!</span>
         </div>
     </div>
     
@@ -986,7 +1000,7 @@
         function scrollToSection(sectionId) {
             const element = document.getElementById(sectionId);
             if (element) {
-                const offsetTop = element.offsetTop - 80; // Account for fixed navbar
+                const offsetTop = element.offsetTop - 80;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -1031,17 +1045,13 @@
             const submitButton = document.getElementById('submitButton');
             const loadingOverlay = document.getElementById('loadingOverlay');
             const successMessage = document.getElementById('successMessageTemplate');
-            const successText = document.getElementById('successMessageText');
             
             // Show loading overlay
             loadingOverlay.classList.remove('hidden');
             loadingOverlay.classList.add('flex');
             submitButton.disabled = true;
             
-            // Get form data
-            const formData = new FormData(form);
-            
-            // Simulate sending (replace with actual API call if needed)
+            // Simulate sending
             setTimeout(() => {
                 // Hide loading
                 loadingOverlay.classList.add('hidden');
@@ -1065,7 +1075,7 @@
             }, 1500);
         }
         
-        // Placeholder functions for buttons
+        // Placeholder functions
         function learnMore(courseId) {
             showModal('courseModal');
         }
@@ -1096,8 +1106,8 @@
             
             counters.forEach(counter => {
                 const target = parseFloat(counter.getAttribute('data-target'));
-                const duration = 2000; // 2 seconds
-                const increment = target / (duration / 16); // 60fps
+                const duration = 2000;
+                const increment = target / (duration / 16);
                 let current = 0;
                 
                 const updateCounter = () => {
@@ -1114,7 +1124,6 @@
             });
         }
         
-        // Trigger animation when page loads
         window.addEventListener('load', animateCounters);
     </script>
     
